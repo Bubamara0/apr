@@ -1,0 +1,302 @@
+header {
+  margin-bottom: 0px !important ;
+}
+/*------TITRE------*/
+
+.div_titre{
+  display:flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  font-size:350%;
+  white-space: nowrap;
+  top:25rem;
+  margin:2rem 0;
+  padding:2rem 0;
+}
+
+.titre:before, 
+.titre:after{
+  display: block;
+  content:"  ";
+  height:2.5px; 
+  width:150%;
+  background-color: #d70019;
+}
+
+.titre:after{
+  margin-top:2rem;
+}
+
+.titre:before{
+   margin-bottom:2rem;
+}
+
+
+
+
+
+
+
+
+#presentation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+
+#presentation p {
+  width: 25rem;
+}
+
+#gif {
+  display: flex;
+  justify-content: center;
+}
+
+#camion {
+  border: 4px solid #d3bc7d;
+  margin: 5rem;
+}
+
+#photoCamion{
+    width:40rem;
+}
+
+#objectif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photoCamion{
+    margin-right:24rem;
+    margin-top:10rem;
+    margin-bottom:10rem;
+    border-radius: 1%;
+}
+
+/* #photoCamion:hover{
+  transform:scaleX(-1);
+} */
+
+#texteAffutage{
+  display: flex;
+  justify-content: center;
+  width:25rem;
+  height:10rem;
+  padding: 2rem 3rem 4rem 3rem;
+  margin:0 3rem 3rem 3rem;
+  border-left:5px #d70019 solid;
+  line-height: 30px;
+  color:#474747;
+  background-color:rgba(196, 196, 196, 0.192);
+}
+
+#texteAffutage p{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#texteObjectif{
+    display: flex;
+    flex-direction: column;
+    background-color: #070707;
+    max-width:35rem;
+    color:white;
+    position: absolute;
+    right:14rem;
+    padding:1rem 4rem;
+    border-radius: 1%;
+    line-height: 2rem;
+    box-shadow: 10px 8px rgba(0, 0, 0, 0.185);
+    border: 8px solid #dbaa6a;
+}
+
+#titreObjectif {
+  font-size: 180%;
+  font-weight: 600;
+  color: #dbaa6a;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#titreObjectif::first-letter{
+  font-size:200%;
+}
+
+#objectif p {
+  margin: 1rem;
+}
+
+#objectif a {
+  text-decoration: none;
+  color: #d70019;
+  font-weight: 600;
+  font-size: 140%; 
+}
+
+#objectif a:hover{
+   color: #d70019;
+}
+
+#contacter{
+  text-align: center;
+}
+
+#contacter a{
+  border:1px #d70019 solid;
+  padding:10px;
+  border-radius: 5px;
+}
+
+#contacter a:hover{
+  background-color: #dbaa6a;
+  transition:0.8s;
+}
+
+.ruban{
+  width:150%;
+}
+
+div.ruban{
+  animation-duration: 20s;
+  animation-name: defilement;
+  animation-timing-function:ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes defilement{
+  0%{margin-left:-300px;} 
+  10%{margin-left:-200px;}
+  20%{margin-left:-100px;}
+  40%{margin-left:0;}
+  60%{margin-left:-100px;}
+  80%{margin-left:-200px;}
+  100%{margin-left:-300px;}
+}
+
+.ok {
+  opacity: 0;
+  position: relative;
+  left: 100px;
+  transition-duration: 0.5s;
+}
+
+.bk {
+  opacity: 0;
+  position: relative;
+  right: 100px;
+  transition-duration: 0.5s;
+}
+
+.ck {
+  opacity: 0;
+  position: relative;
+  transition-duration: 2s;
+}
+
+#route{
+  width:60%;
+  transform:rotate(10deg);
+  margin-top:-3rem;
+  margin-left:-65rem;
+  overflow:hidden;
+  z-index:-10;
+  padding:0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #titre:before, #titre:after{
+    width:95%;
+  }
+  #div_titre{
+    width:100%;
+    height:10rem;
+    padding:0;
+    margin:0;
+    top:0;
+    position:relative;
+  }
+  #titre{
+      font-size:45%;
+      margin:0;
+      max-width:80vw;
+      align-self: center;
+  }
+  #route{
+    display:none;
+  }
+  #texteAffutage{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #paragraphes{
+    width:100vw;
+  }
+  #texteObjectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texteObjectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photoCamion{
+    transition: none;
+    width:20rem;
+    margin-left:24rem;
+  }
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
+
+
+
+/* @media screen and (min-width: 481px) and (max-width: 767px) {
+  
+}
+​
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+} */
+}

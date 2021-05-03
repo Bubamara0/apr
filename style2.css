@@ -1,0 +1,437 @@
+.divLame {
+    position: absolute;
+    margin-top: 200px;
+  }
+  .divLame p {
+    background-color: rgba(0, 0, 0, 0.747);
+    z-index: 1;
+    text-align: center;
+    width: 180px;
+    color: white;
+    position: absolute;
+    font-size: 25px;
+    margin: 60px 0px 0px -10px;
+  }
+  #lame
+  {
+    width: 150px;
+    animation: 8s linear 0s infinite normal backwards;
+    animation-name: rotation;
+    z-index: 0;
+  }
+  #lame:hover {
+    cursor: pointer;
+    z-index: 0;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(360deg);
+    }
+  }
+  /* SECTION SLIDE */
+  .slideShow {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .sectionSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: -70px 0px 100px 0px;
+    background-color: black;
+    padding: 80px 0px 80px 0px;
+    border-top: solid 5px #DBAA6A;
+    width: 80%;
+  }
+  @keyframes slidy {
+    0% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  #slider {
+    overflow: hidden;
+  }
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+  }
+  /* 
+  SECTION Horaires & Activités*/
+  .imageActivitesSection,
+  .imageHorairesSection {
+    width: 300px;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .activitesSection {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .activitiesContener,
+  .ContenerHoraires {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 30%;
+    border: solid 1px #DBAA6A;
+    padding: 25px;
+    margin: 10px 0px 10px 0px;
+    transition: all 0.5s;
+  }
+  .one .horairesPone {
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+  }
+  .one {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    color: #DBAA6A;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .activitiesContener {
+    background-color: black;
+    color: white;
+    z-index: 1;
+    padding: 40px 60px 50px 70px;
+    border: #DBAA6A solid 8px;
+  }
+  .activitesPlusImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: -50px;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  .horairesPLusIMage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    transition: all 0.5s;
+  }
+  .ContenerHoraires {
+    background-color: white;
+    padding: 10px 90px 20px 80px;
+  }
+  .horloge-logo,
+  .mains-logo,
+  .camion-logo,
+  .information-logo {
+    width: 60px;
+    padding: 10px;
+  }
+  .horairesPLusIMage:hover,
+  .activitesPlusImage:hover {
+    transform: scale(1.1);
+  }
+  .horairesPLusIMage:hover {
+    z-index: 2;
+  }
+  .horairesPtwo {
+    text-align: center;
+    padding: 20px;
+    width: 95%;
+  }
+  .horairesPthree {
+    text-align: center;
+    font-weight: 600;
+    color: #D70019;
+  }
+
+
+  /*MOTO*/
+
+  #idmoto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .moto {
+    border: 10px double #000;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Accueil/IMG_1516.jpg) top center;
+    background-size: 100%;
+    margin: 70px 0px 0px 0px;
+    background-attachment: fixed;
+  }
+  /* FACEBOOK / ACTUALITES */
+  .contener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+  }
+  .fb-page {
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.46);
+    /* padding: 0px 83px 0px 83px; */
+    background-color: white;
+    margin-bottom: 20px;
+    /* margin-left: 23%; */
+    box-sizing: border-box;
+    background-color: black;
+    margin-bottom: 70px;
+  }
+  .box {
+    padding: 35px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.527);
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .fb-height {
+    display: none !important;
+  }
+  .container-fb {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .container-fb--height {
+    display: none !important;
+  }
+  .box-height {
+    display: none !important;
+  }
+  /* FORMULAIRE NOUS CONTACTER */
+  .separateurCouleur {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+  }
+  #nousContacter {
+    color: white;
+  }
+  #nousContacterContener {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.46);
+    background: url(/Boutique/20210303_102918bc.jpg) no-repeat center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .contact-formContener {
+    background-color: rgba(33, 33, 33, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 5px;
+    flex-flow: column;
+    width: 420px;
+    margin: 20px;
+  }
+  #nousContacterContener h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    color: #D70019;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contact-form input {
+    padding: 10px 8px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 330px;
+  }
+  .contact-form input:focus {
+    border-bottom: 2px solid #E22F4A;
+  }
+  .contact-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 10px;
+    font-weight: 600;
+    background-color: #D70019;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #D70019;
+  }
+  .contact-form button:hover {
+    background-color: #000000;
+    color: white;
+  }
+  textarea {
+    resize: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+  }
+  /* Carte contact */
+  #carteContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 33, 33, 0.849);
+    flex-flow: column;
+    width: 370px;
+    height: 270px;
+    padding: 40px;
+    margin: 10px;
+  }
+  #carteContact p {
+    width: 200px;
+  }
+  .adresse,
+  .telephone,
+  .fax {
+    border: solid #ccc 2px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    flex-flow: row wrap;
+    color: rgb(102, 99, 99);
+    font-weight: 540;
+    margin-bottom: 10px;
+    padding: 5px 0px 0px 0px;
+    width: 100%;
+  }
+  #carteContact img {
+    width: 48px;
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-right: 60px;
+    padding: 4px;
+  }
+  .mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5px 0px;
+    font-weight: 600;
+    background-color: #D70019;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+  }
+  /* GOOGLE */
+  #carteGoogle {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
+    margin: 70px 0px 70px 0px;
+  }
+  /*#################################################################### MEDIA QUERIES ##################################################################*/
+  /*#################################################################### MEDIA QUERIES ##################################################################*/
+  @media screen and (max-width: 480px) {
+    .horairesPLusIMage,
+    .imageActivitesSection,
+    .imageHorairesSection,
+    .activitesPlusImage {
+      width: 360px;
+    }
+    #nousContacterContener {
+      width: 360px;
+    }
+    .activitesPlusImage {
+      z-index: 0;
+    }
+    .horairesPLusIMage:hover,
+    .activitesPlusImage:hover {
+      transform: scale(1);
+    }
+    .horairesPLusIMage:hover {
+      z-index: 0;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+  }
+  @media screen and (max-width: 992px) {
+    .fb-height {
+      display: inherit !important;
+      width: 100% !important;
+    }
+    .fb-full {
+      display: none !important;
+    }
+    .container-fb-height {
+      padding: 3px;
+    }
+  }

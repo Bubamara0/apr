@@ -1,0 +1,159 @@
+header {
+  margin-bottom: 0px !important ;
+}
+.div_titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 350%;
+  
+}
+
+h1{
+  font-weight: 400;
+}
+
+.titre:before,
+.titre:after {
+  display: block;
+  content: "  ";
+  height: 2.5px;
+  width: 100%;
+  background-color: #d70019; /*#e90e32;*/
+}
+
+.titre:after {
+  margin-top: 2rem;
+}
+
+.titre:before {
+  margin-bottom: 2rem;
+}
+
+
+/*------SECTION REMOULEUR------*/
+
+.remouleur {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+h2 {
+  margin: 40px 0px;
+  font-size:150%;
+}
+
+#historique {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 450px;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#slogan {
+  padding: 70px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#remoulage {
+  width: 400px;
+}
+
+
+
+/*------SECTION TIMELINE------*/
+
+#img_timeline {
+  width: 100%;
+}
+
+#timeline_mobile {
+  display: none;
+}
+
+
+
+/*------MEDIA QUERIES------*/
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .div_titre {
+    margin-right: 0;
+    padding-right: 0;
+    width: 90vw;
+  }
+  .titre {
+    font-size: 50%;
+  }
+  h2 {
+    align-self: center;
+  }
+  .column {
+    width: 90%;
+  }
+  #slogan {
+    padding: 2rem;
+  }
+  #remoulage {
+    width: 300px;
+    align-self: center;
+  }
+  #img_timeline {
+    display: none;
+  }
+  #timeline_mobile {
+    display: inherit;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  .div_titre {
+    width: 90vw;
+  }
+  .titre {
+    font-size: 75%;
+  }
+  #photo_remouleur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #remoulage {
+    width: 40%;
+  }
+}
+
+/* @media screen and (min-width: 481px) and (max-width: 767px) and (orientation : portrait) {
+  
+
+}
+
+
+@media screen and (min-width : 768px) and (max-width : 1025px) and (orientation : portrait) {
+ 
+}
+@media screen and (min-width : 768px) and (max-width : 1025px) and (orientation : landscape) {
+
+
+} */

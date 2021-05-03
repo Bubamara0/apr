@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Accueil</title>
+  </head>
+  <!--######################################################## PAGE ACCUEIL ##########################################################################-->
+  <body>
+    <!--################################################### FACEBOOK PLUGGIN ######################################################################### -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v10.0"
+      nonce="6gwTLnTx"
+    ></script>
+    <!--################################################ FIN FACEBOOK PLUGGIN ######################################################################### -->
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="#logo"> <img id="logo" src="/menu/header_logo.png" /></a>
+        </div>
+        <div class="headerDroite">
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="/histoire.html">L'histoire d'APR</a></li>
+              <li><a  href="#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--########################################################### FIN MINI MENU  ######################################################################### -->
+      <!--########################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="/index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #D70019;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+
+          <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+        </ul>
+        <div class="divLame">
+          <p>Accueil</p>
+          <img id="lame" src="/Menu/lameF.png" alt="lame" />
+        </div>
+      </div>
+
+      
+      <!--########################################################### FIN MENU PRINCIPAL  ######################################################################### -->
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="/index2.html">ACCUEIL</a></li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+          <li><a href="#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+      <!--########################################################### FIN MENU SECONDAIRE  ####################################################### -->
+      <!-- ########################################################### MENU BURGER ################################################################-->
+      <nav class="nav-wrapper">
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="/index2.html">ACCUEIL</a></li>
+            <li><a href="/affutage.html">AFFUTAGE</a></li>
+            <li><a href="/avente.html">VENTE</a></li>
+            <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="/clients.html">NOS CLIENTS</a></li>
+            <li><a href="#nousContacter">NOUS CONTACTER</a></li>
+          </ul>
+          <button class="nav-toogler">☰</button>
+        </div>
+      </nav>
+      <!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+    <!-- ##################################################################### SECTION SLIDE ###########################################################-->
+    <main>
+      <section class="sectionSlide">
+        <div class="slideShow">
+          <div id="slider">
+            <figure>
+              <img src="/Accueil/20180929_144318copy.jpg" alt="Equipe" />
+              <img src="/Accueil/2dm.jpg" alt="Lames" />
+              <img src="/Accueil/3.jpg" alt="Scie" />
+              <img src="/Accueil/4d.jpg" alt="Couteau" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- ############################################### Section Description Activités ###############################################################-->
+      <!-- ############################################### Section Description Activités ###############################################################-->
+      <section class="activitesSection">
+        <div class="horairesPLusIMage">
+          <div class="ContenerHoraires">
+            <p class="one"><strong>Nos horaires d'ouverture</strong></p>
+            <img
+              class="horloge-logo"
+              src="/Accueil/horloge.png"
+              alt="Logo-horloge"
+            />
+            <p class="horairesPtwo">
+              L'Affûtage du Pays de Rance est ouvert de :
+            </p>
+            <p class="horairesPthree">8h à 12h et de 13h30 à 17h30</p>
+            <p class="horairesPthree">du Lundi au Vendredi</p>
+          </div>
+          <div class="imageHorairesSection">
+            <img
+              class="information-logo"
+              src="/Accueil/informations.png"
+              alt="logo informations"
+            />
+            <p class="horairesPone">
+              À la suite des annonces gouvernementales, nous tenons à vous
+              informer que l'entreprise reste ouverte aux heures habituelles.
+            </p>
+          </div>
+        </div>
+        <div class="activitesPlusImage">
+          <div class="imageActivitesSection">
+            <img
+              class="camion-logo"
+              src="/Accueil/camion.png"
+              alt="logo camion"
+            />
+            <p class="horairesPone">
+              Tournées de ramassage des outils des entreprises du Pays de Rance,
+              de l'Ille et Vilaine, des Côtes d'Armor et Normandie. N’hésitez
+              pas à nous contacter.
+            </p>
+          </div>
+          <div class="activitiesContener">
+            <p class="one">Deux prestations complémentaires</p>
+            <img
+              class="mains-logo"
+              src="/Accueil/mains.png"
+              alt="Logo-poignée de main"
+            />
+            <ul>
+              <li>► Affûtage d’outils</li>
+              <li>
+                ► Vente d’outils <br />
+                Qualité professionnelle
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--#################################################### ARRIERE PLAN MOTO ######################################################################-->
+      <!--#################################################### ARRIERE PLAN MOTO ######################################################################-->
+      <section id="idmoto">
+        <div class="moto"></div>
+      </section>
+      <!--################################################################# SECTION ACTUALITÉS & CONTACT #############################################-->
+      <!--################################################################# SECTION ACTUALITÉS & CONTACT #############################################-->
+      <section class="contener">
+        <div class="div_titre">
+          <p class="titre" id="nosActualites">Nos Actualités</p>
+        </div>
+        <div class="container-fb">
+          <div class="row">
+            <div
+              class="fb-page fb-full box"
+              data-href="https://www.facebook.com/APR35/"
+              data-tabs="timeline,events,messages"
+              data-width="500"
+              data-height="1000"
+              data-small-header="false"
+              data-adapt-container-width="false"
+              data-hide-cover="false"
+              data-show-facepile="false"
+            >
+              <blockquote
+                cite="https://www.facebook.com/APR35/"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/APR35/"
+                  >Affûtage du Pays de Rance</a
+                >
+              </blockquote>
+            </div>
+            <div
+              class="fb-page fb-height container-fb-height"
+              data-href="https://www.facebook.com/APR35/"
+              data-tabs="timeline,events,messages"
+              data-width="350"
+              data-height="550"
+              data-small-header="true"
+              data-adapt-container-width="false"
+              data-hide-cover="false"
+              data-show-facepile="true"
+            >
+              <blockquote
+                cite="https://www.facebook.com/APR35/"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/APR35/"
+                  >Affûtage du Pays de Rance</a
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="separateurCouleur">
+          <div class="div_titre">
+            <p class="titre" id="nousContacter">Nous contacter</p>
+          </div>
+          <div id="nousContacterContener">
+            <div id="carteContact">
+              <h2>Carte contact</h2>
+              <div class="adresse">
+                <img src="/Accueil/adresse.png" alt="maison" />
+                <p>
+                  Affûtage du Pays de Rance, <br />
+                  10 rue de la Ruette au Loup <br />
+                  35400 SAINT MALO
+                </p>
+              </div>
+              <div class="telephone">
+                <img src="/Accueil/telep.png" alt="logo telephone" />
+                <p>02 99 81 04 07</p>
+              </div>
+              <div class="fax">
+                <img src="/Accueil/fax.png" alt="logo fax" />
+                <p>09 70 06 12 04</p>
+              </div>
+            </div>
+            <div class="contact-formContener">
+              <h2>Envoyez nous un mail</h2>
+              <form class="contact-form">
+                <input
+                  id="name"
+                  class="name"
+                  type="text"
+                  placeholder="Name"
+                /><br />
+                <input
+                  id="mail"
+                  class="email"
+                  type="email"
+                  placeholder="Email"
+                /><br />
+                <textarea
+                  id="message"
+                  class="message"
+                  placeholder="Message"
+                  rows="3"
+                  cols="40"
+                >
+                </textarea
+                ><br />
+                <button id="btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--######################################################## SECTION CARTE GOOGLE #####################################################################-->
+      <!--######################################################## SECTION CARTE GOOGLE #####################################################################-->
+      <section id="carteGoogle">
+        <iframe
+          class="carteGoogle"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.656902453668!2d-1.984580884921833!3d48.6355472243262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e83e58d12c47b%3A0x8ab13c12ce6520ee!2s10%20Rue%20de%20la%20Ruette%20au%20Loup%2C%2035400%20Saint-Malo!5e0!3m2!1sfr!2sfr!4v1616158188649!5m2!1sfr!2sfr"
+          width="1000"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <div class="btncookie" id="boxcookie">
+      <p class="p-cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        expedita blanditiis sed consequatur iure omnis doloremque vitae
+        voluptate id velit, provident ea nemo repellendus officia inventore
+        obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+        itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+        alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+      </p>
+      <button id="nocookie" type="button" class="#">Non</button>
+      <button id="okcookie" type="button" class="#">Oui</button>
+    </div>
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <footer>
+      <div class="divLogoFooter">
+        <p>Suivez-nous !</p>
+        <a target="_blank" href="https://www.facebook.com/APR35/"
+          ><img src="/footer/fb.png" alt="logo facebook"
+        /></a>
+      </div>
+      <div class="contenerFooter">
+        <a href="#nousContacter"
+          ><div class="divDesLogos">
+            <img
+              class="logosFooter"
+              src="/footer/telep.png"
+              alt="logo téléphone"
+            /><img
+              class="logosFooter"
+              src="/footer/fax.png"
+              alt="logo fax"
+            /><img
+              class="logosFooter"
+              src="/footer/home.png"
+              alt="logo adresse"
+            /></div
+        ></a>
+      </div>
+      <div class="contenerMentionsLégales">
+        <p class="pMentions">Mentions légales</p>
+      </div>
+    </footer>
+    <!--#############################################################"" SCRIPT #####################################################################-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/cookie.js"></script>
+  </body>
+</html>

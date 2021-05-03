@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="clients.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Clients</title>
+  </head>
+  <!--######################################################## PAGE Clients ##########################################################################-->
+  <body>
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="/index2.html#logo">
+            <img id="logo" src="/menu/header_logo.png"
+          /></a>
+        </div>
+        <div class="headerDroite">
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="/histoire.html">L'histoire d'APR</a></li>
+              <li><a href="/index2.html#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--######################################################## FIN MINI MENU  ######################################################################### -->
+      <!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="/index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #E2001A;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+        </ul>
+      </div>
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="/index2.html">ACCUEIL</a></li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="index2.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+          <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+      <!--########################################################### FIN MENU DEUX  ######################################################################### -->
+      <!--################################################################# FIN MENU DEUX  ######################################################################### -->
+      <!-- ########################################################### MENU BURGER ################################################################-->
+      <nav class="nav-wrapper">
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="/index2.html">ACCUEIL</a></li>
+            <li><a href="/affutage.html">AFFUTAGE</a></li>
+            <li><a href="/avente.html">VENTE</a></li>
+            <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="/clients.html">NOS CLIENTS</a></li>
+            <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+          </ul>
+          <button class="nav-toogler">☰</button>
+        </div>
+      </nav>
+      <!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+    <main>
+      <!--########################################################### SECTION REMERCIEMENTS  ######################################################################### -->
+      <!--########################################################### SECTION REMERCIEMENTS  ######################################################################### -->
+      <section class="remerciements">
+        <div class="div_titre">
+          <p class="titre">Nos Remerciements</p>
+        </div>
+        <p class="phraseAccroche">
+          Nous tenions à remercier nos clients,
+          <strong style="text-transform: uppercase"
+            >particuliers comme professionnels</strong
+          >
+          issus de divers secteurs. <br />
+          Parmis eux:
+        </p>
+        <div class="decoFond">
+          <div class="contenerCartesMerci">
+            <div class="cartesMerci">
+              <div class="divImageMerci">
+                <p>Vétérinaires</p>
+                <div class="background backgroundVeterinaire"></div>
+              </div>
+              <p class="pro">
+                <a href="https://www.veterinairesrancefremur.com/"
+                  >Fabaccae et Ronan Josselin <br />
+                  Plouer sur Rance</a
+                >
+              </p>
+            </div>
+            <div class="cartesMerci">
+              <div class="divImageMerci">
+                <p>Locations de carotteuse</p>
+                <div class="background backgroundCarotteuse"></div>
+              </div>
+              <p class="pro">
+                <a href="https://www.sitec35.com/"> SITEC Rennes </a><br />
+                <a href="https://www.aasgard.fr/magasins/aasgard-rennes-nord"
+                  >AASGARD Rennes</a
+                >
+                –
+                <a href="https://www.aasgard.fr/magasins/aasgard-tours"
+                  >Tours
+                </a>
+                –
+                <a href="https://www.aasgard.fr/magasins/aasgard-saint-malo"
+                  >ST Malo</a
+                >
+                <br />
+                <a
+                  href="https://www.kiloutou.fr/agences-ouvertes/l/saint-malo/79-avenue-du-general-de-gaulle/2093982"
+                  >KILOUTOU St Malo</a
+                >
+                –
+                <a
+                  href="https://www.kiloutou.fr/agence/rennes-cesson-s%C3%A9vign%C3%A9/0381"
+                  >Rennes</a
+                >
+                –
+                <a
+                  href="https://www.kiloutou.fr/agences-ouvertes/l/vezin-le-coquet/route-de-lorient/2093935"
+                  >Vezin</a
+                >
+              </p>
+            </div>
+            <div class="cartesMerci">
+              <div class="divImageMerci">
+                <p>Fabricants PVC – Bois Fenêtre</p>
+                <div class="background backgroundPVC"></div>
+              </div>
+              <p class="pro">
+                <a href="https://www.bochassy.fr/">Bochassy</a> <br />
+                <a href="https://www.ouveo-menuiseries.fr/">OUVEO</a>
+              </p>
+            </div>
+            <div class="cartesMerci">
+              <div class="divImageMerci">
+                <p>L'Alimentaire</p>
+                <div class="background backgroundAlimentaire"></div>
+              </div>
+              <p class="pro">
+                <a
+                  href="https://guide.michelin.com/fr/fr/bretagne/cancale/restaurant/le-coquillage"
+                  >RESTAURANT Le coquillage ~ Olivier Roellinger</a
+                >
+                <br />
+                <a href="https://apparance.business.site/"
+                  >RESTAURANT Apparance ST Servan</a
+                >
+                <br />
+                <a href="https://www.lebeurrebordier.com/">FROMAGE Bordier</a>
+                <br />
+                <a href="https://www.chezfrancoise1938.fr/"
+                  >POISSONNERIE chez Françoise</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--########################################################### SECTION MESSAGE  ######################################################################### -->
+      <!--########################################################### SECTION MESSAGE  ######################################################################### -->
+      <section class="imageCamion"></section>
+      <!--########################################################### SECTION CAMION  ######################################################################### -->
+      <!--########################################################### SECTION CAMION  ######################################################################### -->
+
+      <section class="sectionAvantCamion">
+        <div class="divMerciSection2">
+          <p class="merciSection2">
+            Merci tout simplement à l’ensemble de nos clients menuisier,
+            ébénistes, charpentiers, marine, couvreur, agenceurs, cuisinistes
+            sur les départements 22-35-50 pour la confiance qu'ils nous
+            accordent.
+          </p>
+        </div>
+        <div class="divRoad" onmouseover="playAudioRoad()">
+          <img
+            class="camiondessin"
+            onclick="playAudioKlaxon()"
+            src="/Clients/camiondessin.png"
+            alt="Avant d'un camion"
+          />
+        </div>
+        <audio id="myRoad">
+          <source src="/Clients/road.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio id="myKlaxon">
+          <source src="/Clients/klaxon_camion_1-SF.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+      <section class="realisationsSections">
+        <div class="realisationsContener">
+          <div class="divRealisations">
+            <p class="metiersRealisations">Charpetier</p>
+            <img
+              class="imgRealisations"
+              src="/Clients/Charpentier.jpg"
+              alt="Charpentier"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/ebeniste.jpg"
+              alt="Ebeniste"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Chantier Naval.jpg"
+              alt="Chantier Naval"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Paysagiste.jpg"
+              alt="paysagiste"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Elagueur.jpg"
+              alt="Elagueur"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Boucher.jpg"
+              alt="Boucher"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Jardinier.jpg"
+              alt="Jardinier"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Imprimeur.jpg"
+              alt="Imprimeur"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Fabricant-de-matiere-plastique.jpg"
+              alt="Fabricant de matière plastique"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Serrurier.jpg"
+              alt="Serrurier
+                                "
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Veterinaire.jpg"
+              alt="Veterinaire"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Centre-Equestre.jpg"
+              alt="Centre équestre (peigne de tondeuse)"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Fabricant-de-menuiserie-aluminium.jpg"
+              alt="Fabricant de menuiserie aluminium
+                                      "
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Entreprise-agricole.jpg
+                                        "
+              alt="Entreprise agricole"
+            />
+          </div>
+          <div class="divRealisations">
+            <img
+              class="imgRealisations"
+              src="/Clients/Menuisier.jpg"
+              alt="Menuisier"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--######################################################## Cookie --><!-- bannière cookie #######################################################-->
+    <!--######################################################## Cookie --><!-- bannière cookie #######################################################-->
+    <div class="btncookie" id="boxcookie">
+      <p class="p-cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        expedita blanditiis sed consequatur iure omnis doloremque vitae
+        voluptate id velit, provident ea nemo repellendus officia inventore
+        obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+        itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+        alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+      </p>
+      <button id="nocookie" type="button" class="#">Non</button>
+      <button id="okcookie" type="button" class="#">Oui</button>
+    </div>
+    <!-- ################################################################## FOOTER ##################################################################... -->
+    <!-- ################################################################## FOOTER ##################################################################... -->
+    <footer>
+      <div class="divLogoFooter">
+        <p>Suivez-nous !</p>
+        <a target="_blank" href="https://www.facebook.com/APR35/"
+          ><img src="/footer/fb.png" alt="logo facebook"
+        /></a>
+      </div>
+      <div class="contenerFooter">
+        <a href="/index2.html#nousContacter"
+          ><div class="divDesLogos">
+            <img
+              class="logosFooter"
+              src="/footer/telep.png"
+              alt="logo téléphone"
+            /><img
+              class="logosFooter"
+              src="/footer/fax.png"
+              alt="logo fax"
+            /><img
+              class="logosFooter"
+              src="/footer/home.png"
+              alt="logo adresse"
+            /></div
+        ></a>
+      </div>
+      <div class="contenerMentionsLégales">
+        <p class="pMentions">Mentions légales</p>
+      </div>
+    </footer>
+    <!-- ################################################################## SCRIPT ##################################################################... -->
+    <!-- ################################################################## SCRIPT ##################################################################... -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/cookie.js"></script>
+  </body>
+</html>

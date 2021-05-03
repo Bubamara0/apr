@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="histoire.css" />
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="histoire.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="/index2.html#logo">
+            <img id="logo" src="/menu/header_logo.png"
+          /></a>
+        </div>
+        <div class="headerDroite">
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="/histoire.html">L'histoire d'APR</a></li>
+              <li><a href="/index2.html#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--######################################################## FIN MINI MENU  ######################################################################### -->
+      <!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="/index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #E2001A;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+        </ul>
+      </div>
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="/index2.html">ACCUEIL</a></li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="index2.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+          <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+      <!--########################################################### FIN MENU DEUX  ######################################################################### -->
+      <!--################################################################# FIN MENU DEUX  ######################################################################### -->
+      <!-- ########################################################### MENU BURGER ################################################################-->
+      <nav class="nav-wrapper">
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="/index2.html">ACCUEIL</a></li>
+            <li><a href="/affutage.html">AFFUTAGE</a></li>
+            <li><a href="/avente.html">VENTE</a></li>
+            <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="/clients.html">NOS CLIENTS</a></li>
+            <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+          </ul>
+          <button class="nav-toogler">☰</button>
+        </div>
+      </nav>
+      <!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+    
+    <main><div class="div_titre">
+        <h1 class="titre">L'Histoire d'APR</h1></div>
+
+
+
+    <section class="remouleur">
+      
+      <div class="row">
+        <div class="column">
+          <h2>Introduction</h2>
+          <p id="historique">
+            Anciennement, l'activité d'affûtage était principalement exercée par des travailleurs itinérants appelés rémouleurs. On en retrouve des traces dans les registres parisiens dès le Moyen Âge. Les rémouleurs étaient des artisans ambulants qui parcouraient les rues de villes en villes avec leur petite charrette ou ramoulette et agitaient leur clochette en criant :
+          </p>
+          <p id="slogan">
+            “Rémouleur, rémouleur ! Repasse couteaux ! Repasse ciseaux !”
+        </p>
+        </div>
+
+        <div id="photo_remouleur">
+            <img id="remoulage" src="img/remouleur.jpeg" alt="Photo rémouleur">
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <img id="img_timeline" src="img/image.png" alt="Image timeline">
+      <img id="timeline_mobile" src="img/imagemobile.png" alt="Image timeline version mobile">
+    </section>
+</main>
+<!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <div class="btncookie" id="boxcookie">
+      <p class="p-cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        expedita blanditiis sed consequatur iure omnis doloremque vitae
+        voluptate id velit, provident ea nemo repellendus officia inventore
+        obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+        itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+        alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+      </p>
+      <button id="nocookie" type="button" class="#">Non</button>
+      <button id="okcookie" type="button" class="#">Oui</button>
+    </div>
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <footer>
+      <div class="divLogoFooter">
+        <p>Suivez-nous !</p>
+        <a target="_blank" href="https://www.facebook.com/APR35/"
+          ><img src="/footer/fb.png" alt="logo facebook"
+        /></a>
+      </div>
+      <div class="contenerFooter">
+        <a href="#nousContacter"
+          ><div class="divDesLogos">
+            <img
+              class="logosFooter"
+              src="/footer/telep.png"
+              alt="logo téléphone"
+            /><img
+              class="logosFooter"
+              src="/footer/fax.png"
+              alt="logo fax"
+            /><img
+              class="logosFooter"
+              src="/footer/home.png"
+              alt="logo adresse"
+            /></div
+        ></a>
+      </div>
+      <div class="contenerMentionsLégales">
+        <p class="pMentions">Mentions légales</p>
+      </div>
+    </footer>
+    <!--#############################################################"" SCRIPT #####################################################################-->
+ 
+    <script src="script.js"></script>
+    <script src="/cookie.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>

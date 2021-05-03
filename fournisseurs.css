@@ -1,0 +1,218 @@
+/*PARAMETRES GENERAUX*/
+
+main {
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: baseline !important;
+    flex-flow: row wrap !important;
+  }
+  header {
+    margin-bottom: 100px !important ;
+  }
+  div {
+    display: flex;
+    padding: 10px;
+    color: black;
+  }
+  /* SECTION BEST OFFRES */
+  /* titre best offre et son animation*/
+  #bestOffres {
+    white-space: nowrap;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    position: absolute;
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
+  @keyframes slidein {
+    from {
+      font-size: 100%;
+    }
+    75% {
+      font-size: 110%;
+    }
+    to {
+      font-size: 100%;
+    }
+  }
+  /* Reste de la section BEST OFFRES */
+  .sectionBestOffres {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: white;
+    border: solid 2px #DBAA6A;
+    transition: all 0.4s;
+    padding-top: 10px;
+  }
+  .sectionBestOffres:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 2px 4px 5px #0000006c;
+  }
+  .offre {
+    font-size: 14px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+  }
+  .offre p {
+    max-width: 400px;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 600;
+  }
+  .offreContenu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    align-items: center;
+  }
+  .imgPartenaires {
+    padding: 10px;
+    max-width: 100px;
+    height: auto;
+  }
+  .ul1,
+  .ul2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .ul1 {
+    height: 75px;
+  }
+  .ul1 li,
+  .ul2 li {
+    color: black;
+    display: flex;
+    margin: 2px;
+  }
+  .ul2 {
+    height: 150px;
+  }
+  .plusMargin {
+    margin-bottom: 10px;
+  }
+  .border {
+    border: solid black 1px;
+  }
+  .dernierP {
+    margin-top: 10px;
+  }
+  /*################################################################### Section FOURNISSEURS #############################################################*/
+  h2 {
+    padding: 20px;
+    width: 200px;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: 1px 0px 3px black;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  .partenairesSections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 70px;
+    margin-top: -100px;
+    width: 500px;
+  }
+  .scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+  }
+  .scroller {
+    overflow: scroll;
+  }
+  .petiteDiv {
+    width: 350px;
+    height: 300px;
+    text-align: justify;
+    padding: 25px;
+  }
+  .fournisseurs {
+    max-height: 300px;
+    width: 70%;
+    background-color: #D9CEBF;
+    min-height: 300px;
+    border: solid 2px #DBAA6A;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+  .fournisseurs p {
+    width: 300px;
+    padding: 15px;
+    text-align: justify;
+  }
+  .petitesDivs,
+  .petiteDiv {
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 15px;
+  }
+  .petitesDivs,
+  .petiteDiv {
+    justify-content: center;
+  }
+  .petitesDivs {
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+  }
+  .logosPartenaires {
+    width: 100%;
+    height: auto;
+  }
+  .logo-Aliprandi {
+    width: 70%;
+  }
+  .logosEspacesVerts {
+    width: 200px;
+  }
+  .espaceVertDiv {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+  }
+  .columnEspacevert {
+    flex-flow: column;
+  }
+  /*########################################################################## MEDIA QUERIES ##############################################################*/
+  @media screen and (max-width: 830px) {
+    .ul1,
+    .ul2 {
+      flex-flow: row wrap;
+    }
+    .sectionBestOffres {
+      width: 360px;
+    }
+    @keyframes slidein {
+      from {
+        font-size: 100%;
+      }
+      75% {
+        font-size: 105%;
+      }
+      to {
+        font-size: 100%;
+      }
+    }
+    .sectionBestOffres:hover {
+      transform: scale(1);
+    }
+  }

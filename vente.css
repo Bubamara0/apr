@@ -1,0 +1,284 @@
+
+ header {
+  margin-bottom: 0px !important ;
+}
+
+  .div_titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin:2rem 0;
+    padding:2rem 0;
+    text-align: center;
+    font-size: 350%;
+    white-space: nowrap;
+  }
+  
+  .titre:before,
+  .titre:after {
+    display: block;
+    content: "  ";
+    height: 2.5px;
+    width: 100%;
+    background-color: #d70019;
+  }
+  
+  .titre:after {
+    margin-top: 2rem;
+  }
+  
+  .titre:before {
+    margin-bottom: 2rem;
+  }
+ 
+  
+
+  
+  
+  
+#boutique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  #boutique h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d70019;
+    width: 20rem;
+    padding: 1rem;
+  }
+  
+  #boutiqueImg {
+    width: 100%;
+    height:20rem;
+    overflow: hidden;
+    margin: 5rem;
+  }
+
+  #headerboutique{
+    width:90vw;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/deux.jpg');
+    background-size: cover;
+    background-position: center;
+    height:20rem;
+    background-attachment: fixed;
+    margin-top:5rem;
+  }
+  
+  #texteVente{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #texteVente p{
+      text-align: center;
+  }
+  
+  #texteBoutique{
+    padding:5rem;
+    font-size:120%;
+    text-align: center;
+  }
+
+  #listeQualités{
+      padding:2rem 2rem 1rem 2rem;
+      font-size:140%;
+  }
+  #texteVente ul{
+      width:45rem;
+      border:3px #dbaa6a solid;
+      padding:1rem;
+      margin:2rem;
+      outline:black 2px solid;
+  }
+  
+  #texteVente li{
+      font-size:130%;
+      padding:0.5rem;
+      white-space: nowrap;
+  }
+
+  .check{
+      width:5%;
+      padding-right:1rem;
+  }
+
+  #texteDebut{
+      width:40rem;
+      font-size:120%;
+      line-height:2rem;
+      padding:2rem;
+  }
+
+
+td{
+  padding:0.2rem;
+}
+
+#caddie{
+  width:5%;
+  padding:2rem;
+  position: absolute;
+  left:0;
+  animation: defile 8s ease 1;
+}
+@keyframes defile{
+  0%{left:0;}
+  100%{transform: translate(20rem);}
+}
+
+
+#diapo_boutique img{
+  height:21rem;
+  padding:0.5rem;
+  opacity:85%;
+}
+
+#diapo_boutique img:hover{
+  opacity: 100%;
+}
+#diapo_boutique{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width:98vw;
+  border: #d70019 4px solid;
+  margin-bottom: 10rem;
+}
+#diapo_boutique a{
+  padding:0.2rem;
+}
+
+
+@media screen and (max-width: 480px) and (orientation : portrait){
+ 
+  #texteVente{
+    width:21rem;
+  }
+  .div_titre{
+    width:90vw;
+    margin:2rem 0;
+    padding:0;
+  }
+  .titre{
+      font-size:70%;
+  }
+  #caddie{
+    display:none;
+  }
+  #texteDebut{
+    width:19rem;
+    font-size:100%;
+  }
+  #listeQualités{
+    font-size:120%;
+    width:90vw;
+    padding:2rem 0;
+  }
+  #texteVente ul{
+    width:90vw;
+    font-size:70%;
+    padding:1rem;
+    margin:0;
+  }
+  #texteVente li{
+    white-space: normal;
+  }
+
+ 
+#headerboutique{
+  height:10rem;
+  width:100vw;
+}
+
+#texteBoutique{
+  width:20rem;
+  text-align: center;
+  padding:1rem;
+}
+
+#boutique{
+  max-width:100vw;
+}
+}
+
+
+@media screen and (max-width: 850px) and (orientation : landscape){
+  
+  .titre{
+    font-size:70%;
+  }
+  .div_titre{
+    width:90vw;
+  }
+  #headerboutique{
+    height:10rem;
+  }
+  #texteVente ul{
+    width:90vw;
+    font-size:70%;
+    padding:1rem;
+    margin:0;
+  }
+  #texteDebut{
+    width:90vw;
+  }
+  #caddie{
+    margin-top:8rem;
+  }
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation : portrait) {
+  .titre{
+    font-size:70%;
+  }
+  #vente_outils{
+    width:100vw;
+  }
+  #texteDebut{
+    width:90vw;
+  }
+  #texteVente ul{
+    width:90vw;
+    font-size:70%;
+    padding:1rem;
+    margin:0;
+  }
+  #caddie{
+    margin-top:8rem;
+  }
+  #headerboutique{
+    height:12rem;
+  }
+
+}
+
+
+@media screen and (min-width : 768px) and (max-width : 1025px) and (orientation : portrait) {
+  #vente_outils{
+    width:100vw;
+  }
+    .titre{
+      font-size: 80%;
+    }
+    #caddie{
+      margin-top:8rem;
+    }
+}
+@media screen and (min-width : 768px) and (max-width : 1025px) and (orientation : landscape) {
+#caddie{
+  margin-top:8rem;
+}
+
+}
+

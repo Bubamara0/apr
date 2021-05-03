@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atterrissage</title>
+    <link rel="stylesheet" href="tournees.css"/>
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  
+    <script src="activites.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="/index2.html#logo">
+            <img id="logo" src="/menu/header_logo.png"
+          /></a>
+        </div>
+        <div class="headerDroite">
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="/histoire.html">L'histoire d'APR</a></li>
+              <li><a href="/index2.html#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--######################################################## FIN MINI MENU  ######################################################################### -->
+      <!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="/index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #E2001A;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+        </ul>
+      </div>
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="/index2.html">ACCUEIL</a></li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+          <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+      <!--########################################################### FIN MENU DEUX  ######################################################################### -->
+      <!--################################################################# FIN MENU DEUX  ######################################################################### -->
+      <!-- ########################################################### MENU BURGER ################################################################-->
+      <nav class="nav-wrapper">
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="/index2.html">ACCUEIL</a></li>
+            <li><a href="/affutage.html">AFFUTAGE</a></li>
+            <li><a href="/avente.html">VENTE</a></li>
+            <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="/clients.html">NOS CLIENTS</a></li>
+            <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+          </ul>
+          <button class="nav-toogler">☰</button>
+        </div>
+      </nav>
+      <!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+
+    <main>
+
+  <!--PRÉSENTATION-->
+      <section id="presentation">
+         <div class="div_titre">
+         <p class="titre">Tournées de ramassage</p></div>
+          <img id="route" src="img/route_gif.gif" alt="Animation petites voitures">
+
+     
+      
+      
+        <div id="paragraphes">
+      
+          <div id="texteAffutage">
+          <p> 
+             <br>Parce que la satisfaction de nos clients nous tient particulièrement à cœur, nous mettons tout en oeuvre pour les satisfaire au mieux et répondre à l'ensemble de leurs besoins pour faciliter leurs activités quotidiennes. Ainsi, nous effectuons des déplacements jusqu'à vous pour récupérer les outils à affûter.
+          </p>
+       </div>
+       
+       
+       
+       <!--             Spécialisée dans l’affûtage d’outils à Saint-Malo, Rennes, Granville, Dinan, notre équipe est à votre service, que vous
+            soyez un professionnel ou un particulier.
+        Nos services incluent,
+       selon vos besoins : une prestation de conseil, de dépannage ou de
+       réparation. 
+       Être toujours proches de nos clients et de leurs attentes afin de
+            faciliter leur activité quotidienne. Chaque semaine, nous organisons
+            ainsi une tournée de ramassage d’outils auprès des professionnels de
+            tout le Pays de Rance.-->
+          <div   id="objectif">
+           <img class="appear ck" id="photoCamion" src="img/camion-apr.jpeg" alt="Camion des tournées">
+           <div  id="texteObjectif" ><p id="titreObjectif">Comment se déroulent les tournées ?</p>
+          <p>
+            Chaque semaine, nous organisons des tournées de ramassage dans un large périmètre comprenant Granville, Rennes et Lamballe ainsi que tout le Pays de Rance afin de récupérer les outils des professionnels.
+            <br>Pour ce qui est des particuliers, nous mettons en place des dépôts réguliers d’outils.
+          </p> 
+        <p id="contacter">
+            <a href="index2.html#nousContacter">Contactez-nous</a> pour connaître nos jours et lieux de passage.
+          </p></div> 
+        </div>
+        </div>
+      </section>
+
+      
+ <!--GIF CAMION-->
+      <section  class="appear ck" id="gif">
+        <img id="camion" src="img/tourneesgiff.jpg" alt="Animation secteur des tournées" />
+      </section>
+
+    
+    </main>
+
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <div class="btncookie" id="boxcookie">
+      <p class="p-cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        expedita blanditiis sed consequatur iure omnis doloremque vitae
+        voluptate id velit, provident ea nemo repellendus officia inventore
+        obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+        itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+        alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+      </p>
+      <button id="nocookie" type="button" class="#">Non</button>
+      <button id="okcookie" type="button" class="#">Oui</button>
+    </div>
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <footer>
+      <div class="divLogoFooter">
+        <p>Suivez-nous !</p>
+        <a target="_blank" href="https://www.facebook.com/APR35/"
+          ><img src="/footer/fb.png" alt="logo facebook"
+        /></a>
+      </div>
+      <div class="contenerFooter">
+        <a href="#nousContacter"
+          ><div class="divDesLogos">
+            <img
+              class="logosFooter"
+              src="/footer/telep.png"
+              alt="logo téléphone"
+            /><img
+              class="logosFooter"
+              src="/footer/fax.png"
+              alt="logo fax"
+            /><img
+              class="logosFooter"
+              src="/footer/home.png"
+              alt="logo adresse"
+            /></div
+        ></a>
+      </div>
+      <div class="contenerMentionsLégales">
+        <p class="pMentions">Mentions légales</p>
+      </div>
+    </footer>
+    <!--#############################################################"" SCRIPT #####################################################################-->
+
+
+  
+  <script src="lightbox/lightbox2-2.11.3/src/js/lightbox.js"></script>
+  <script src="script.js"></script>
+  <script src="/cookie.js"></script>
+  </body>
+</html>
+  </body>
+</html>
