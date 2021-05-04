@@ -26,7 +26,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 90%;
-    background: url(/Equipe/7.png) fixed;
+    background: url(equipe/7.png) fixed;
     background-size: cover;
     box-shadow: 1px 1px 12px 1px;
     overflow: hidden;
@@ -89,22 +89,22 @@ header {
     }
   }
   .conteneurLogoTechnique {
-    background-image: url(/Equipe/Technique.png);
+    background-image: url(equipe/Technique.png);
   }
   .conteneurLogoResponsable {
-    background-image: url(/Equipe/Responsable.png);
+    background-image: url(equipe/Responsable.png);
   }
   .conteneurLogoCommercial {
-    background-image: url(/Equipe/Commercial.png);
+    background-image: url(equipe/Commercial.png);
   }
   .conteneurLogoAssistante {
-    background-image: url(/Equipe/AssistanteDirection.png);
+    background-image: url(equipe/AssistanteDirection.png);
   }
   .conteneurLogoAffuteur {
-    background-image: url(/Equipe/lame1.png);
+    background-image: url(equipe/lame1.png);
   }
   .conteneurLogohote {
-    background-image: url(/Equipe/HoteAccueil.png);
+    background-image: url(equipe/HoteAccueil.png);
   }
   .conteneurDivSlogan {
     display: flex;
@@ -145,7 +145,7 @@ header {
     align-items: center;
     width: 330px;
     height: 200px;
-    background: url(/Equipe/quote.png) center no-repeat;
+    background: url(equipe/quote.png) center no-repeat;
     background-size: cover;
   }
   .slogan {
