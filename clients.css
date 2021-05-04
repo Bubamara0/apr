@@ -17,7 +17,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 10px 0px 10px 0px;
-    background-image: url(/Menu/fond1.png);
+    background-image: url(menu/fond1.png);
   }
   .phraseAccroche {
     padding: 20px;
@@ -61,16 +61,16 @@ header {
     background-size: 100%;
   }
   .backgroundVeterinaire {
-    background-image: url(/Clients/Veterinaire.jpg);
+    background-image: url(clients/Veterinaire.jpg);
   }
   .backgroundCarotteuse {
-    background-image: url(/Clients/carotteuse.jpg);
+    background-image: url(clients/carotteuse.jpg);
   }
   .backgroundPVC {
-    background-image: url(/Clients/fenetre.jpg);
+    background-image: url(clients/fenetre.jpg);
   }
   .backgroundAlimentaire {
-    background-image: url(/Clients/restaut.jpg);
+    background-image: url(clients/restaut.jpg);
   }
   .cartesMerci a {
     color: black;
@@ -102,7 +102,7 @@ header {
   .imageCamion {
     width: 100%;
     height: 60vh;
-    background: url(/Clients/camion-apr.jpeg) fixed center;
+    background: url(clients/camion-apr.jpeg) fixed center;
     background-size: 100%;
   }
   /*########################################################################################  Camion  ###########################################################################*/
@@ -111,10 +111,10 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: url(/Clients/road2.png) center repeat-y;
+    background: url(clients/road2.png) center repeat-y;
   }
   .divRoad:hover {
-    background-image: url(/Clients/road.gif);
+    background-image: url(clients/road.gif);
   }
   .divMerciSection2 {
     display: flex;
@@ -158,7 +158,7 @@ header {
   .realisationsSections {
     flex-flow: column;
     margin-bottom: 70px;
-    background: url(/Clients/road2.png) center repeat-y;
+    background: url(clients/road2.png) center repeat-y;
     width: 100%;
   }
   .metiersRealisations {
