@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activités</title>
+    <link rel="stylesheet" href="affutage.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="activites.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="/index2.html#logo">
+            <img id="logo" src="/menu/header_logo.png"
+          /></a>
+        </div>
+        <div class="headerDroite">
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="/histoire.html">L'histoire d'APR</a></li>
+              <li><a href="/index2.html#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--######################################################## FIN MINI MENU  ######################################################################### -->
+      <!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="/index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #E2001A;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+        </ul>
+      </div>
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="/index2.html">ACCUEIL</a></li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="/clients.html">NOS CLIENTS</a></li>
+          <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+      <!--########################################################### FIN MENU DEUX  ######################################################################### -->
+      <!--################################################################# FIN MENU DEUX  ######################################################################### -->
+      <!-- ########################################################### MENU BURGER ################################################################-->
+      <nav class="nav-wrapper">
+        <div class="navigation">
+          <ul class="nav-items">
+            <li><a href="/index2.html">ACCUEIL</a></li>
+            <li><a href="/affutage.html">AFFUTAGE</a></li>
+            <li><a href="/avente.html">VENTE</a></li>
+            <li><a href="/index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="/equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="/fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="/clients.html">NOS CLIENTS</a></li>
+            <li><a href="/index2.html#nousContacter">NOUS CONTACTER</a></li>
+          </ul>
+          <button class="nav-toogler">☰</button>
+        </div>
+      </nav>
+      <!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <!--Animation lame-->
+      <div><img id="lame" src="img/lame.png" alt="Décoration lame" /></div>
+
+      <!--TITRE-->
+      <div class="div_titre">
+        <p class="titre">Affûtage d'outils</p>
+      </div>
+      <p id="sous_titre">
+        <em>Notre équipe est à votre service, que vous soyez un <strong>professionnel</strong> ou un <strong>particulier</strong>
+        </em>
+      </p>
+
+      <!--SECTION CADRE-->
+      <section id="cadre_noir">
+        <div id="cadre">
+          <h2 id="question">
+            Vous utilisez quotidiennement des outils de découpe ?
+          </h2>
+          <p id="reponse">
+            Pour optimiser votre travail, votre temps et vos dépenses, il est
+            important de procéder à un <strong>affûtage de qualité.</strong>
+          </p>
+        </div>
+        <div id="epingle">
+          <img
+            id="epingle_img"
+            src="img2/epingle.png"
+            alt="Décoration épingle"
+          />
+        </div>
+      </section>
+
+      <!--SECTION OUTILS PRIS EN CHARGE-->
+      <section id="outils">
+        <p class="caption">
+          Notre grande expertise de l’affûtage nous permet de prendre en charge
+          plusieurs types d’outils.
+        </p>
+        <div class="row">
+          <div class="appear droite texte">
+            <h3 class="type_outils">Outils acier</h3>
+            <p class="liste_outils">
+              Lames, scies cloches, forêts de charpente et béton, chaînes de
+              mortaiseuses, chaînes de tronçonneuses, tailles haies, couteaux
+              broyeurs, fers épais…
+            </p>
+          </div>
+          <div class="appear droite photo">
+            <img src="img/lames.jpg" alt="#" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="appear gauche texte">
+            <h3 class="type_outils">Outils carbure</h3>
+            <p class="liste_outils">Lames, fraises, scies à ruban, fers…</p>
+          </div>
+          <div class="appear gauche photo">
+            <img src="img/lames.jpg" alt="#" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="appear droite texte">
+            <h3 class="type_outils">Outils diamant</h3>
+            <p class="liste_outils">Lames, inciseurs, mèches, fraises….</p>
+          </div>
+          <div class="appear droite photo">
+            <img src="img/lames.jpg" alt="#" />
+          </div>
+        </div>
+
+        <p class="caption">
+          Vous souhaitez faire affûter d’autres outils ?
+          <a href="/index2.html#nousContacter">Contactez-nous</a> pour nous
+          présenter votre besoin précis.
+        </p>
+
+        <!--Vidéo affûtage de couteau-->
+        <video controls>
+          <source src="img/video.m4v" type="video/mp4" />
+          <p>
+            Votre navigateur ne prend pas en charge les vidéos HTML5. Voici
+            <a href="img.video.m4v">un lien pour télécharger la vidéo</a>.
+          </p>
+        </video>
+      </section>
+    </main>
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <!-- ################################################### Cookie --><!-- bannière cookie #################################################################-->
+    <div class="btncookie" id="boxcookie">
+      <p class="p-cookie">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        expedita blanditiis sed consequatur iure omnis doloremque vitae
+        voluptate id velit, provident ea nemo repellendus officia inventore
+        obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+        itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+        alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+      </p>
+      <button id="nocookie" type="button" class="#">Non</button>
+      <button id="okcookie" type="button" class="#">Oui</button>
+    </div>
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <!-- ################################################################ FOOTER #####################################################################... -->
+    <footer>
+      <div class="divLogoFooter">
+        <p>Suivez-nous !</p>
+        <a target="_blank" href="https://www.facebook.com/APR35/"
+          ><img src="/footer/fb.png" alt="logo facebook"
+        /></a>
+      </div>
+      <div class="contenerFooter">
+        <a href="#nousContacter"
+          ><div class="divDesLogos">
+            <img
+              class="logosFooter"
+              src="/footer/telep.png"
+              alt="logo téléphone"
+            /><img
+              class="logosFooter"
+              src="/footer/fax.png"
+              alt="logo fax"
+            /><img
+              class="logosFooter"
+              src="/footer/home.png"
+              alt="logo adresse"
+            /></div
+        ></a>
+      </div>
+      <div class="contenerMentionsLégales">
+        <p class="pMentions">Mentions légales</p>
+      </div>
+    </footer>
+    <!--#############################################################"" SCRIPT #####################################################################-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/cookie.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>
