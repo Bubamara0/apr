@@ -204,7 +204,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/Accueil/IMG_1516.jpg) top center;
+    background: url(accueil/IMG_1516.jpg) top center;
     background-size: 100%;
     margin: 70px 0px 0px 0px;
     background-attachment: fixed;
