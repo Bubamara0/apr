@@ -3,7 +3,7 @@ header {
 }
 
 /*------TITRE------*/
-.div_titre {
+/* .div_titre {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ header {
 
 .titre:before {
   margin-bottom: 2rem;
-}
+} */
 
 #sous_titre {
   color: rgb(59, 59, 59);
@@ -219,9 +219,7 @@ video {
 @media (max-width: 750px) {
   
 /*------TITRE------*/
-  .titre {
-    font-size: 60%;
-  }
+  
   #sous_titre {
     width: 50%;
     font-size: 90%;
@@ -298,9 +296,7 @@ video {
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-  .titre {
-    font-size: 60%;
-  }
+ 
 }
 
 /*   
