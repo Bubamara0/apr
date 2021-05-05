@@ -4,35 +4,20 @@ header {
 /*------TITRE------*/
 
 .div_titre{
-  display:flex;
+  
   position: absolute;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  font-size:350%;
-  white-space: nowrap;
+
   top:25rem;
-  margin:2rem 0;
-  padding:2rem 0;
+  
 }
 
 .titre:before, 
 .titre:after{
-  display: block;
-  content:"  ";
-  height:2.5px; 
+ 
   width:150%;
-  background-color: #d70019;
+
 }
 
-.titre:after{
-  margin-top:2rem;
-}
-
-.titre:before{
-   margin-bottom:2rem;
-}
 
 
 
@@ -224,23 +209,25 @@ div.ruban{
     justify-content: center;
     max-width:100vw;
   }
-  #titre:before, #titre:after{
-    width:95%;
+  .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  #div_titre{
-    width:100%;
-    height:10rem;
-    padding:0;
-    margin:0;
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top:0;
     position:relative;
   }
-  #titre{
-      font-size:45%;
-      margin:0;
-      max-width:80vw;
-      align-self: center;
-  }
+  
   #route{
     display:none;
   }
@@ -300,3 +287,6 @@ div.ruban{
 
 } */
 }
+
+
+/* <a href="OFFRES.pdf" download="offres.pdf">Download Text</a> */
