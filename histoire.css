@@ -97,14 +97,7 @@ h2 {
 /*------MEDIA QUERIES------*/
 
 @media screen and (max-width: 480px) and (orientation: portrait) {
-  .div_titre {
-    margin-right: 0;
-    padding-right: 0;
-    width: 90vw;
-  }
-  .titre {
-    font-size: 50%;
-  }
+ 
   h2 {
     align-self: center;
   }
