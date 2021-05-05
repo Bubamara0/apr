@@ -26,6 +26,7 @@ header {
   overflow: hidden;
   border-bottom: solid 5px #dbaa6a;
   color: white;
+  width:100vw;
 }
 
 #logo img {
@@ -86,7 +87,6 @@ header {
   font-style: italic;
   letter-spacing: 0.2rem;
   padding: 1rem;
-  white-space: nowrap;
 }
 
 
