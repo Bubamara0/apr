@@ -38,7 +38,7 @@ main {
   display: block;
   content: "  ";
   height: 2px;
-  background-color: #D70019;
+  background-color: #d70019;
 }
 .titre:before {
   margin-bottom: 23px;
@@ -56,9 +56,7 @@ main {
   padding: 2rem 0;
   text-align: center;
   font-size: 350%;
-  
 }
-
 
 /* ################################################################## BANDE HEADER ################################################################ */
 /* LOGO */
@@ -94,10 +92,10 @@ main {
   width: 60%;
   justify-content: center;
   align-items: center;
-  color: #D70019;
+  color: #d70019;
 }
 #contenerHeader p {
-  color: #D70019;
+  color: #d70019;
   padding: 5px;
   border-radius: 10px;
   font-size: 30px;
@@ -121,15 +119,15 @@ main {
 .miniMenu li {
   margin: 15px;
   text-align: center;
-  color: #D70019;
+  color: #d70019;
   transition: all 0.5s;
 }
-.borderRight{
-  border-right: solid #D70019 2px;
+.borderRight {
+  border-right: solid #d70019 2px;
   padding-right: 30px;
 }
 .miniMenu a {
-  color: #D70019;
+  color: #d70019;
 }
 /* ################################################################## MENU PRINCIPAL ################################################################ */
 #white {
@@ -139,7 +137,7 @@ main {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  border-bottom: solid 5px #DBAA6A;
+  border-bottom: solid 5px #dbaa6a;
 }
 #white a {
   font-size: 14px;
@@ -156,7 +154,7 @@ main {
 }
 #white a:hover,
 .miniMenu li:hover {
-  text-decoration: underline 2px #DBAA6A;
+  text-decoration: underline 2px #dbaa6a;
   transform: scale(1.1);
 }
 #white ul,
@@ -212,7 +210,7 @@ select {
 }
 .menuDeux a:hover {
   transform: scale(1.05);
-  color: #D70019;
+  color: #d70019;
 }
 .menuDeux li {
   text-align: center;
@@ -236,7 +234,7 @@ select {
   height: 100%;
 }
 ul a:hover {
-  color: #D70019;
+  color: #d70019;
 }
 .menuDeux .liNosActivites .ulNosActivites li {
   display: none;
@@ -258,7 +256,7 @@ ul a:hover {
   z-index: 10;
 }
 .menuDeux ul .liNosActivites:hover {
-  color: #E22F4A;
+  color: #e22f4a;
   height: 30px;
   margin: 0;
   float: left;
@@ -305,13 +303,13 @@ MENU BURGER */
   transition: 0.3s;
 }
 .nav-wrapper ul li:hover {
-  color: #D70019;
+  color: #d70019;
 }
 .nav-toogler {
   background-color: rgb(0, 0, 0);
   padding: 0px 10px 3px 10px;
   border-radius: 10px;
-  color: #D70019;
+  color: #d70019;
   font-size: 30px;
   border: none;
 }
@@ -322,7 +320,7 @@ MENU BURGER */
   padding: 1em 0 1em;
   text-align: center;
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: block;
   width: 100%;
   left: 0;
@@ -335,7 +333,7 @@ MENU BURGER */
     padding: 20px;
   } */
 .sm_footer {
-  background-color: #15AAC0;
+  background-color: #15aac0;
   text-align: center;
 }
 .sm_hidden {
@@ -349,7 +347,7 @@ footer {
   flex-flow: row wrap;
   background-color: black;
   padding: 15px;
-  border-top: #DBAA6A 3px solid;
+  border-top: #dbaa6a 3px solid;
 }
 .divLogoFooter {
   display: flex;
@@ -376,9 +374,50 @@ footer {
   border-radius: 100%;
 }
 .pMentions {
-  color: #D70019;
+  color: #d70019;
+  background-color: black;
+  border: double 2px #dbaa6a;
+  border-radius: 10px;
   text-decoration: underline;
   padding: 10px;
+  cursor: pointer;
+}
+.ligneFooter{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+}
+.mentionsLegalesContener {
+  display: flex;
+  flex-direction: column;
+  color: rgb(110, 105, 105);
+  display: none;
+  align-items: center;
+}
+
+.mentionsLegalesContener h3, .mentionsLegalesContener h2 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+  color: #d70019;
+  padding: 10px;
+}
+.mentionsLegalesContener{
+  width: 80%;
+}
+.mentionsLegalesContener p{
+  padding: 40px;
+  text-align: justify;
+}
+
+.containerUlFooter{
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 /* ################################################################## MEDIA QUERIES MENU ################################################################ */
 @media screen and (max-width: 800px) {
