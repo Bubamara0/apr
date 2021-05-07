@@ -48,26 +48,32 @@
   0% {
     left: 0%;
   }
-  20% {
+  10% {
     left: 0%;
   }
-  25% {
+  20% {
     left: -100%;
   }
-  45% {
+  30% {
     left: -100%;
+  }
+  40% {
+    left: -200%;
   }
   50% {
     left: -200%;
   }
+  60% {
+    left: -300%;
+  }
   70% {
-    left: -200%;
-  }
-  75% {
     left: -300%;
   }
-  95% {
-    left: -300%;
+  80% {
+    left: -400%;
+  }
+  90% {
+    left: -400%;
   }
   100% {
     left: 0%;
@@ -85,8 +91,6 @@
   width: 500%;
   margin: 0;
   left: 0;
-  text-align: left;
-  font-size: 0;
   animation: 30s slidy infinite;
 }
 /* 
