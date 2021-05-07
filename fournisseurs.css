@@ -22,31 +22,30 @@ main {
     animation-name: slidein;
     animation-iteration-count: infinite;
     position: absolute;
-    background-size: 200px;
-    background-repeat: no-repeat;
+    margin-bottom: 130px;
   }
   @keyframes slidein {
     from {
-      font-size: 100%;
+      font-size: 90%;
     }
     75% {
-      font-size: 110%;
+      font-size: 100%;
     }
     to {
-      font-size: 100%;
+      font-size: 90%;
     }
   }
   /* Reste de la section BEST OFFRES */
-  .sectionBestOffres {
+  .sectionBestOffres{
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 50%;
     background-color: white;
     border: solid 2px #DBAA6A;
     transition: all 0.4s;
-    padding-top: 10px;
+    padding-top: 100px;
   }
   .sectionBestOffres:hover {
     transform: scale(1.03);
