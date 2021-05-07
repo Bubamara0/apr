@@ -70,6 +70,7 @@ main {
 }
 #logo {
   transition: all 0.2s;
+  width: 120%;
 }
 #logo:hover {
   margin-left: 10%;
@@ -104,31 +105,7 @@ main {
   margin-top: 10px;
   text-align: center;
 }
-/* PETIT MENU */
-.miniMenu {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  align-items: center;
-  font-size: 18px;
-  text-align: center;
-  background-color: black;
-  transition: all 0.7s;
-  border-radius: 10px;
-}
-.miniMenu li {
-  margin: 15px;
-  text-align: center;
-  color: #d70019;
-  transition: all 0.5s;
-}
-.borderRight {
-  border-right: solid #d70019 2px;
-  padding-right: 30px;
-}
-.miniMenu a {
-  color: #d70019;
-}
+
 /* ################################################################## MENU PRINCIPAL ################################################################ */
 #white {
   background-color: black;
@@ -139,12 +116,12 @@ main {
   z-index: 1;
   border-bottom: solid 5px #dbaa6a;
 }
-#white a {
+
+#white .liWhite {
   font-size: 14px;
   text-align: center;
-  padding: 10px 20px 10px 20px;
+  padding: 0px 10px 0px 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.473);
   z-index: 1;
   letter-spacing: 3px;
   transition: all 0.5s;
@@ -152,8 +129,8 @@ main {
   justify-content: center;
   align-items: center;
 }
-#white a:hover,
-.miniMenu li:hover {
+
+#white .liWhite:hover {
   text-decoration: underline 2px #dbaa6a;
   transform: scale(1.1);
 }
@@ -166,23 +143,46 @@ main {
   flex-flow: row wrap;
   color: white;
 }
-.equipe a {
+#white button {
   display: flex;
-  align-items: center;
-  height: 22px;
-}
-option {
   background-color: black;
+  border: none;
+  cursor: pointer;
+  z-index: 0;
 }
-select {
+
+#divDepliant,
+#divDepliant2 {
+  background-color: black;
+  padding: 5px;
   border-radius: 5px;
-  background-color: black;
-  background: url(menu/flamme.png) fixed;
-  color: white;
-  width: 185px;
-  letter-spacing: 4px;
-  font-size: 13px;
+  top: 30px;
+  width: 130px;
+  position: absolute;
+  font-size: 14px;
+  flex-direction: column;
+  display: none;
+  align-items: center;
 }
+
+#containerDepliant,
+#containerDepliant2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  z-index: 2;
+}
+.aDepliant {
+  color: #d70019;
+  transition: all 0.3s;
+  padding: 5px;
+}
+.aDepliant:hover {
+  text-decoration: underline #dbaa6a;
+  transform: scale(1.05);
+}
+
 /* ################################################################## MENU SECONDAIRE ################################################################ */
 .menuDeux {
   background-color: white;
@@ -200,9 +200,40 @@ select {
   transition: all 0.5s ease-in-out;
   font-weight: 600;
 }
-.menuDeux a {
+.menuDeux button {
+  background-color: white;
   text-align: center;
-  padding: 5px 5px 5px 10px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 0;
+}
+#divDepliant3,
+#divDepliant4 {
+  background-color: rgb(255, 255, 255);
+  border: solid black 1px;
+  border-radius: 5px;
+  z-index: 100;
+  top: 30px;
+  width: 165px;
+  position: absolute;
+  font-size: 14px;
+  flex-direction: column;
+  display: none;
+  text-align: center;
+  align-items: center;
+}
+#containerDepliant3,
+#containerDepliant4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+.menuDeux a,
+.menuDeux button {
+  text-align: center;
   color: rgb(158, 147, 147);
   letter-spacing: 2px;
   transition: all 0.5s;
@@ -211,6 +242,7 @@ select {
 .menuDeux a:hover {
   transform: scale(1.05);
   color: #d70019;
+  z-index: 1;
 }
 .menuDeux li {
   text-align: center;
@@ -218,12 +250,7 @@ select {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  margin: 0px 2px 0px 2px;
   padding: 10px;
-}
-.menuDeux li:hover {
-  background-color: rgb(0, 0, 0);
-  border-radius: 100%;
 }
 .menuDeux ul {
   display: flex;
@@ -231,39 +258,8 @@ select {
   align-items: center;
   text-align: center;
   flex-flow: row wrap;
-  height: 100%;
 }
-ul a:hover {
-  color: #d70019;
-}
-.menuDeux .liNosActivites .ulNosActivites li {
-  display: none;
-  z-index: 10;
-}
-.menuDeux .liNosActivites:hover .ulNosActivites li {
-  display: block;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.671);
-}
-.menuDeux .liNosActivites:hover .ulNosActivites {
-  display: block;
-  z-index: 10;
-  background-color: rgb(0, 0, 0);
-}
-.menuDeux .liNosActivites {
-  display: block;
-  letter-spacing: 2px;
-  z-index: 10;
-}
-.menuDeux ul .liNosActivites:hover {
-  color: #e22f4a;
-  height: 30px;
-  margin: 0;
-  float: left;
-  line-height: 25px;
-  z-index: 10;
-  background-color: rgb(0, 0, 0);
-}
+
 /* 
 MENU BURGER */
 .navigation {
@@ -382,7 +378,7 @@ footer {
   padding: 10px;
   cursor: pointer;
 }
-.ligneFooter{
+.ligneFooter {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
@@ -397,21 +393,22 @@ footer {
   align-items: center;
 }
 
-.mentionsLegalesContener h3, .mentionsLegalesContener h2 {
+.mentionsLegalesContener h3,
+.mentionsLegalesContener h2 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 20px;
   color: #d70019;
   padding: 10px;
 }
-.mentionsLegalesContener{
+.mentionsLegalesContener {
   width: 80%;
 }
-.mentionsLegalesContener p{
+.mentionsLegalesContener p {
   padding: 40px;
   text-align: justify;
 }
 
-.containerUlFooter{
+.containerUlFooter {
   padding: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -419,6 +416,7 @@ footer {
   flex-flow: row wrap;
   width: 100%;
 }
+
 /* ################################################################## MEDIA QUERIES MENU ################################################################ */
 @media screen and (max-width: 800px) {
   .menuDeux,
