@@ -7,8 +7,7 @@ header {
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 70px;
-  margin: 70px 0px 0px 0px;
+  margin: 70px 0px 70px 0px;
   background-color: white;
 }
 .decoFond {
@@ -21,11 +20,25 @@ header {
 }
 .phraseAccroche {
   padding: 20px;
-  margin-bottom: 50px;
   text-align: center;
   color: #dbaa6a;
   letter-spacing: 1px;
   word-spacing: 2px;
+  font-weight: 600;
+}
+.divMerciSection2 {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 70px 0px;
+  width: 100%;
+  text-align: center;
+  color: #d70019;
+  background-color: rgb(255, 255, 255);
+}
+.merciSection2 {
+  width: 50%;
   font-weight: 600;
 }
 .contenerCartesMerci {
@@ -55,6 +68,10 @@ header {
   background-color: white;
   transition: all 0.5s;
 }
+.moins{
+  padding-bottom: 0px !important;
+  height: 190px !important;
+}
 .background {
   width: 100%;
   height: 190px;
@@ -71,6 +88,12 @@ header {
 }
 .backgroundAlimentaire {
   background-image: url(clients/restaut.jpg);
+}
+.backgroundCiseaux{
+  background-image: url(clients/ciseauxBois.jpg);
+}
+.backgroundSecateur{
+  background-image: url(clients/secateur.jpg);
 }
 .cartesMerci a {
   color: black;
@@ -98,13 +121,6 @@ header {
   background-color: rgba(0, 0, 0, 0.596);
   padding: 10px 0px 10px 0px;
 }
-/*################################################################### SECTION PHOTO DU CAMION APR #######################################################*/
-.imageCamion {
-  width: 100%;
-  height: 60vh;
-  background: url(clients/camion-apr.jpeg) fixed center;
-  background-size: 100%;
-}
 /*########################################################################################  Camion  ###########################################################################*/
 .divRoad {
   display: flex;
@@ -116,21 +132,7 @@ header {
 .divRoad:hover {
   background-image: url(clients/road.gif);
 }
-.divMerciSection2 {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0px 50px 0px;
-  width: 100%;
-  text-align: center;
-  color: #d70019;
-  background-color: rgb(255, 255, 255);
-}
-.merciSection2 {
-  width: 50%;
-  font-weight: 600;
-}
+
 .camiondessin:hover {
   transform: scale(1.1);
 }
