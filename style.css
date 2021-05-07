@@ -30,6 +30,7 @@ header {
 
 }
 
+
 #logo img {
     height: 11rem;
 }
@@ -82,9 +83,15 @@ header {
   font-weight: 600;
 }
 
+#div_slogan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
 #slogan {
   font-size: 240%;
-  color: rgba(255, 0, 0, 0.589);
+  color: #d70019;
   font-style: italic;
   letter-spacing: 0.2rem;
 }
@@ -414,6 +421,7 @@ select{
     justify-content: center;
     align-items: center;
   }
+  
   #logo img {
     height: 110%;
   }
@@ -473,13 +481,18 @@ select{
 
 @media (min-width: 1600px) and (max-width:1800px)and (orientation: landscape){
   #liensNav4{
-    margin-top:8rem;
+    margin-top:3rem;
   }
+
+
 }
   @media (min-width: 1801px) and (orientation: landscape){
     #liensNav a,
     select{
       margin:9rem;
       font-size:200%;
+    }
+    #liensNav4{
+      margin-top:-10rem;
     }
   }
