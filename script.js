@@ -9,6 +9,44 @@ function change() {
       window.document.formListe2.liste2.options[
         document.formListe2.liste2.selectedIndex
       ].value;
+  else if (window.document.formListe3.liste3.selectedIndex != 0)
+    window.location =
+      window.document.formListe3.liste3.options[
+        document.formListe3.liste3.selectedIndex
+      ].value;
+}
+
+// ###################################################################################DEPLIANT MENU
+
+function mouseOver() {
+  document.getElementById("divDepliant").style.display = "flex";
+}
+
+function mouseOut() {
+  document.getElementById("divDepliant").style.display = "none";
+}
+
+function mouseOver2() {
+  document.getElementById("divDepliant2").style.display = "flex";
+}
+
+function mouseOut2() {
+  document.getElementById("divDepliant2").style.display = "none";
+}
+function mouseOver3() {
+  document.getElementById("divDepliant3").style.display = "flex";
+}
+
+function mouseOut3() {
+  document.getElementById("divDepliant3").style.display = "none";
+}
+
+function mouseOver4() {
+  document.getElementById("divDepliant4").style.display = "flex";
+}
+
+function mouseOut4() {
+  document.getElementById("divDepliant4").style.display = "none";
 }
 
 const button = document.querySelector(".pMentions");
