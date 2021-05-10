@@ -14,82 +14,236 @@
 
   <body>
 
-    <header>
+   <header>
       <div id="contenerHeader">
         <div class="divLogo">
-          <a href="index2.html#logo">
-            <img id="logo" src="menu/header_logo.png"
-          /></a>
+          <a href="index2.html#logo"> <img id="logo" src="menu/header_logo.png" /></a>
         </div>
-        <div class="headerDroite">
-          <!--########################################################### MINI MENU  ######################################################################### -->
-          <!--########################################################### MINI MENU  ######################################################################### -->
-          <nav>
-            <ul class="miniMenu">
-              <li><a class="borderRight" href="histoire.html">L'histoire d'APR</a></li>
-              <li><a href="index2.html#nousContacter">Nous contacter</a></li>
-            </ul>
-          </nav>
-        </div>
+        <div class="headerDroite"></div>
       </div>
-      <!--######################################################## FIN MINI MENU  ######################################################################### -->
-      <!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <!--########################################################### FIN MINI MENU  ######################################################################### -->
+      <!--########################################################### MENU PRINCIPAL ######################################################################### -->
       <div id="white">
         <ul class="menu">
-          <li class="equipe">
-            <a href="index2.html"
+          <div
+            id="containerDepliant"
+            onmouseover="mouseOver()"
+            onmouseout="mouseOut()"
+          >
+            <button class="liWhite" id="button">
+              <a class="liWhite" href="index2.html#logo"
+                ><span
+                  style="
+                    font-family: Comic Sans MS;
+                    font-size: 25px;
+                    color: #d70019;
+                    font-style: italic;
+                  "
+                >
+                  A</span
+                >CCUEIL</a
+              >
+            </button>
+            <div id="divDepliant">
+              <a class="aDepliant" href="index2.html#nosActualites">NOS ACTUALITÉS</a>
+              <a class="aDepliant" href="equipe.html">L'ÉQUIPE</a>
+              <a class="aDepliant" href="histoire.html">L'HISTOIRE D'APR</a>
+            </div>
+          </div>
+
+          <div
+            id="containerDepliant2"
+            onmouseover="mouseOver2()"
+            onmouseout="mouseOut2()"
+          >
+            <button class="liWhite" id="button2 ">
+              <span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS ACTIVITÉS
+            </button>
+            <div id="divDepliant2">
+              <a class="aDepliant" href="affutage.html">AFFUTAGE</a>
+              <a class="aDepliant" href="vente.html">VENTE</a>
+            </div>
+          </div>
+
+          <li>
+            <a class="liWhite" href="fournisseurs.html"
               ><span
                 style="
                   font-family: Comic Sans MS;
                   font-size: 25px;
-                  color: #E2001A;
+                  color: #d70019;
                   font-style: italic;
                 "
-                >A</span
-              >CCUEIL</a
+                >N</span
+              >OS FOURNISSEURS</a
             >
           </li>
-          <form name="formListe">
-            <select name="liste" onchange="change()" size="1">
-              <option value="aucun">NOS ACTIVITÉS</option>
-              <option value="affutage.html">Affûtage</option>
-              <option value="tournees.html">Tournées</option>
-              <option value="vente.html">Vente</option>
-            </select>
-          </form>
-          <li><a href="index2.html#nosActualites">NOS ACTUALITÉS</a></li>
-          <li><a href="equipe.html">L'ÉQUIPE</a></li>
-          <li><a href="fournisseurs.html">NOS FOURNISSEURS</a></li>
-          <li><a href="clients.html">NOS CLIENTS</a></li>
+          <li>
+            <a class="liWhite" href="clients.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS CLIENTS</a
+            >
+          </li>
+          <li>
+            <a class="liWhite" href="tournees.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS TOURNÉES</a
+            >
+          </li>
+          <li>
+            <a class="liWhite" href="index2.html#nousContacter"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OUS CONTACTER</a
+            >
+          </li>
         </ul>
+       
       </div>
-      <!--########################################################### MENU SECONDAIRE ######################################################################### -->
+
+      <!--########################################################### FIN MENU PRINCIPAL  ######################################################################### -->
       <!--########################################################### MENU SECONDAIRE ######################################################################### -->
       <div class="menuDeux">
         <ul class="menu">
-          <li><a href="index2.html">ACCUEIL</a></li>
-          <form name="formListe2">
-            <select name="liste2" onchange="change()" size="1">
-              <option value="aucun">NOS ACTIVITÉS</option>
-              <option value="affutage.html">Affûtage</option>
-              <option value="tournees.html">Tournées</option>
-              <option value="vente.html">Vente</option>
-            </select>
-          </form>
-          <li><a href="index2.html#nosActualites">NOS ACTUALITÉS</a></li>
-          <li><a href="equipe.html">L'ÉQUIPE</a></li>
-          <li><a href="fournisseurs.html">NOS FOURNISSEURS</a></li>
-          <li><a href="clients.html">NOS CLIENTS</a></li>
-          <li><a href="index2.html#nousContacter">NOUS CONTACTER</a></li>
+          <div
+            id="containerDepliant3"
+            onmouseover="mouseOver3()"
+            onmouseout="mouseOut3()"
+          >
+            <button class="liWhite" id="button3">
+              <a class="aAccueil" href="index2.html#logo"
+                ><span
+                  style="
+                    font-family: Comic Sans MS;
+                    font-size: 25px;
+                    color: #d70019;
+                    font-style: italic;
+                  "
+                >
+                  A</span
+                >CCUEIL</a
+              >
+            </button>
+            <div id="divDepliant3">
+              <a class="aDepliant" href="index2.html#nosActualites">NOS ACTUALITÉS</a>
+              <a class="aDepliant" href="equipe.html">L'ÉQUIPE</a>
+              <a class="aDepliant" href="histoire.html">L'HISTOIRE D'APR</a>
+            </div>
+          </div>
+
+          <div
+            id="containerDepliant4"
+            onmouseover="mouseOver4()"
+            onmouseout="mouseOut4()"
+          >
+            <button class="liWhite" id="button4 ">
+              <a href="index2.html#logo"
+                ><span
+                  style="
+                    font-family: Comic Sans MS;
+                    font-size: 25px;
+                    color: #d70019;
+                    font-style: italic;
+                  "
+                >
+                  N</span
+                >OS ACTIVITÉS</a
+              >
+            </button>
+            <div id="divDepliant4">
+              <a class="aDepliant" href="affutage.html">AFFUTAGE</a>
+              <a class="aDepliant" href="vente.html">VENTE</a>
+            </div>
+          </div>
+
+          <li>
+            <a class="liWhite" href="fournisseurs.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS FOURNISSEURS</a
+            >
+          </li>
+          <li>
+            <a class="liWhite" href="clients.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS CLIENTS</a
+            >
+          </li>
+          <li>
+            <a class="liWhite" href="tournees.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OS TOURNÉES</a
+            >
+          </li>
+          <li>
+            <a class="liWhite" href="index2.html#nousContacter"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #d70019;
+                  font-style: italic;
+                "
+                >N</span
+              >OUS CONTACTER</a
+            >
+          </li>
         </ul>
       </div>
-      <!--########################################################### FIN MENU DEUX  ######################################################################### -->
-      <!--################################################################# FIN MENU DEUX  ######################################################################### -->
+      <!--########################################################### FIN MENU SECONDAIRE  ####################################################### -->
       <!-- ########################################################### MENU BURGER ################################################################-->
       <nav class="nav-wrapper">
         <div class="navigation">
           <ul class="nav-items">
-            <li><a href="index2.html">ACCUEIL</a></li>
+            <li><a href="index2.html#logo">ACCUEIL</a></li>
             <li><a href="affutage.html">AFFUTAGE</a></li>
             <li><a href="vente.html">VENTE</a></li>
             <li><a href="tournees.html">TOURNÉES</a></li>
