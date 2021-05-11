@@ -1,32 +1,3 @@
-.divLame {
-  position: absolute;
-  margin-top: 200px;
-}
-.divLame p {
-  background-color: rgba(0, 0, 0, 0.747);
-  z-index: 1;
-  text-align: center;
-  width: 180px;
-  color: white;
-  position: absolute;
-  font-size: 25px;
-  margin: 60px 0px 0px -10px;
-}
-#lame {
-  width: 150px;
-  animation: 8s linear 0s infinite normal backwards;
-  animation-name: rotation;
-  z-index: 0;
-}
-#lame:hover {
-  cursor: pointer;
-  z-index: 0;
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(-360deg);
-  }
-}
 /* SECTION SLIDE */
 .slideShow {
   width: 100%;
