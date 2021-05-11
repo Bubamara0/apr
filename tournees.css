@@ -58,9 +58,8 @@ header {
 }
 
 #photoCamion{
-    margin-right:24rem;
-    margin-top:10rem;
-    margin-bottom:10rem;
+    margin-right:30rem;
+    margin-bottom:30rem;
     border-radius: 1%;
 }
 
@@ -134,14 +133,15 @@ header {
 }
 
 #contacter a{
+  color:white;
   border:1px #d70019 solid;
-  padding:10px;
-  border-radius: 5px;
+  padding:7px;
+  border-radius: 15px;
 }
 
 #contacter a:hover{
-  background-color: #dbaa6a;
   transition:0.8s;
+  color:red;
 }
 
 .ruban{
