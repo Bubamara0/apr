@@ -204,7 +204,8 @@ div.ruban{
 
 
 @media screen and (max-width: 480px) {
-  #presentation{
+ 
+   #presentation{
     display: flex;
     justify-content: center;
     max-width:100vw;
@@ -243,6 +244,7 @@ div.ruban{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
     position:relative;
     transform: none;
     max-width: 100vw;
@@ -251,6 +253,7 @@ div.ruban{
   }
   #paragraphes{
     width:100vw;
+   
   }
   #texteObjectif{
     width:18rem;
@@ -267,8 +270,10 @@ div.ruban{
   }
   #photoCamion{
     transition: none;
-    width:20rem;
-    margin-left:24rem;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  
   }
   #camion{
     max-width:90vw;
