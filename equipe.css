@@ -1,201 +1,201 @@
 header {
-    margin-bottom: 0px !important ;
+  margin-bottom: 0px !important ;
+}
+h2 {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h2:first-letter {
+  color: red;
+}
+.sectionsEquipe {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 100%;
+}
+.contenerDesDeuxDivs {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  background: url(equipe/7.png) fixed;
+  background-size: cover;
+  box-shadow: 1px 1px 12px 1px;
+  overflow: hidden;
+}
+/*##################################################################### Partie avec la photo ##########################################################*/
+.divPhoto {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  overflow: hidden;
+  margin: 40px;
+  box-shadow: 5px 5px 15px 2px;
+}
+.uno {
+  transform: rotate(5deg);
+}
+.dos {
+  transform: rotate(-5deg);
+}
+.punaise {
+  width: 60px;
+  position: absolute;
+  margin-top: -300px;
+}
+.photoEquipe {
+  width: 100%;
+}
+/*##################################################################### Partie avec le slogan ##########################################################*/
+.conteneurLogoTechnique,
+.conteneurLogoResponsable,
+.conteneurLogoCommercial,
+.conteneurLogoAffuteur,
+.conteneurLogoAssistante,
+.conteneurLogohote {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  h2 {
-    color: white;
-    background-color: black;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  50% {
+    transform: rotate(15deg);
   }
-  h2:first-letter {
-    color: red;
+  75% {
+    transform: rotate(-15deg);
   }
-  .sectionsEquipe {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 70px;
-    width: 100%;
+  100% {
+    transform: rotate(0deg);
   }
-  .contenerDesDeuxDivs {
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 90%;
-    background: url(equipe/7.png) fixed;
-    background-size: cover;
-    box-shadow: 1px 1px 12px 1px;
-    overflow: hidden;
-  }
-  /*##################################################################### Partie avec la photo ##########################################################*/
+}
+.conteneurLogoTechnique {
+  background-image: url(equipe/Technique.png);
+}
+.conteneurLogoResponsable {
+  background-image: url(equipe/Responsable.png);
+}
+.conteneurLogoCommercial {
+  background-image: url(equipe/Commercial.png);
+}
+.conteneurLogoAssistante {
+  background-image: url(equipe/AssistanteDirection.png);
+}
+.conteneurLogoAffuteur {
+  background-image: url(equipe/lame1.png);
+}
+.conteneurLogohote {
+  background-image: url(equipe/HoteAccueil.png);
+}
+.conteneurDivSlogan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+}
+.divImageSlogan {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 25px;
+}
+.logoEquipe {
+  width: 100%;
+}
+.pMetierEquipe {
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.747);
+  text-align: center;
+  width: 180px;
+  color: white;
+  padding: 2px;
+}
+.avatarEquipe {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.divSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 200px;
+  background: url(equipe/quote.png) center no-repeat;
+  background-size: cover;
+}
+.slogan {
+  width: 300px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.un,
+.deux,
+.trois {
+  position: absolute;
+  border-radius: 90%;
+}
+.un,
+.deux {
+  background-color: white;
+  margin-top: -30px;
+  border: solid rgb(146, 135, 135) 1px;
+  padding: 20px;
+}
+.un {
+  margin-left: 50px;
+}
+.deux {
+  margin-left: -80px;
+}
+.trois {
+  background-color: rgb(146, 135, 135);
+  padding: 12px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.ulUnDeuxTrois {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* ###################################################################### MEDIA QUERIES ###########################################################  */
+@media screen and (max-width: 480px) and (orientation: portrait) {
   .divPhoto {
-    display: flex;
-    width: 500px;
-    height: 400px;
-    align-items: center;
-    overflow: hidden;
-    margin: 40px;
-    box-shadow: 5px 5px 15px 2px;
-  }
-  .uno {
-    transform: rotate(5deg);
-  }
-  .dos {
-    transform: rotate(-5deg);
-  }
-  .punaise {
-    width: 60px;
-    position: absolute;
-    margin-top: -300px;
-  }
-  .photoEquipe {
-    width: 100%;
-  }
-  /*##################################################################### Partie avec le slogan ##########################################################*/
-  .conteneurLogoTechnique,
-  .conteneurLogoResponsable,
-  .conteneurLogoCommercial,
-  .conteneurLogoAffuteur,
-  .conteneurLogoAssistante,
-  .conteneurLogohote {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    animation-name: rotate;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
-    animation-direction: alternate;
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(15deg);
-    }
-    75% {
-      transform: rotate(-15deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .conteneurLogoTechnique {
-    background-image: url(equipe/Technique.png);
-  }
-  .conteneurLogoResponsable {
-    background-image: url(equipe/Responsable.png);
-  }
-  .conteneurLogoCommercial {
-    background-image: url(equipe/Commercial.png);
-  }
-  .conteneurLogoAssistante {
-    background-image: url(equipe/AssistanteDirection.png);
-  }
-  .conteneurLogoAffuteur {
-    background-image: url(equipe/lame1.png);
-  }
-  .conteneurLogohote {
-    background-image: url(equipe/HoteAccueil.png);
-  }
-  .conteneurDivSlogan {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 500px;
-  }
-  .divImageSlogan {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-    margin: 10px 0px 10px 0px;
-    border-radius: 25px;
-  }
-  .logoEquipe {
-    width: 100%;
-  }
-  .pMetierEquipe {
-    white-space: nowrap;
-    background-color: rgba(0, 0, 0, 0.747);
-    text-align: center;
-    width: 180px;
-    color: white;
-    padding: 2px;
-  }
-  .avatarEquipe {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 100px;
-  }
-  .divSlogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
     height: 200px;
-    background: url(equipe/quote.png) center no-repeat;
-    background-size: cover;
   }
-  .slogan {
-    width: 300px;
-    padding: 30px;
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-  }
-  .un,
-  .deux,
-  .trois {
-    position: absolute;
-    border-radius: 90%;
-  }
-  .un,
-  .deux {
-    background-color: white;
-    margin-top: -30px;
-    border: solid rgb(146, 135, 135) 1px;
-    padding: 20px;
-  }
-  .un {
-    margin-left: 50px;
-  }
-  .deux {
-    margin-left: -80px;
-  }
-  .trois {
-    background-color: rgb(146, 135, 135);
-    padding: 12px;
-    margin-left: 20px;
-    margin-top: 8px;
-  }
-  .ulUnDeuxTrois {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  /* ###################################################################### MEDIA QUERIES ###########################################################  */
-  @media screen and (max-width: 480px) and (orientation: portrait) {
-    .divPhoto {
-      height: 200px;
-    }
-  }
-  @media screen and (max-width: 850px) and (orientation: landscape) {
-  }
-  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
-  }
-  @media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
-  }
+}
+@media screen and (max-width: 850px) and (orientation: landscape) {
+}
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+}
+@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
+}
+@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+}
