@@ -68,7 +68,7 @@ header {
   background-color: white;
   transition: all 0.5s;
 }
-.moins{
+.moins {
   padding-bottom: 0px !important;
   height: 190px !important;
 }
@@ -89,10 +89,10 @@ header {
 .backgroundAlimentaire {
   background-image: url(clients/restaut.jpg);
 }
-.backgroundCiseaux{
+.backgroundCiseaux {
   background-image: url(clients/ciseauxBois.jpg);
 }
-.backgroundSecateur{
+.backgroundSecateur {
   background-image: url(clients/secateur.jpg);
 }
 .cartesMerci a {
