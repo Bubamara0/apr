@@ -20,6 +20,40 @@ main {
   flex-flow: column;
   align-items: center;
 }
+
+/*################################################################### LAME QUI TOURNE ##################################################################*/
+.divLame {
+  position: absolute;
+  margin-top: 200px;
+}
+.divLame p {
+  background-color: rgba(0, 0, 0, 0.747);
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: absolute;
+  letter-spacing: 2px;
+  border-top: #d70019 solid 2px;
+  font-size: 25px;
+  top: 40%;
+}
+#lame {
+  width: 170px;
+  animation: 8s linear 0s infinite normal backwards;
+  animation-name: rotation;
+  z-index: 0;
+}
+#lame:hover {
+  cursor: pointer;
+  z-index: 0;
+  animation-duration: 2s;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
 /* ################################################################## TITRES ################################################################ */
 .titre {
   padding-top: 20px;
@@ -416,6 +450,10 @@ footer {
   flex-flow: row wrap;
   width: 100%;
 }
+.copyright{
+  color: rgb(110, 105, 105);
+  font-size: 12px;
+}
 
 /* ################################################################## MEDIA QUERIES MENU ################################################################ */
 @media screen and (max-width: 800px) {
@@ -432,5 +470,11 @@ footer {
   }
   .headerDroite {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #white .liWhite {
+    background-color: black;
   }
 }
