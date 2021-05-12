@@ -1,0 +1,119 @@
+/* -----HEADER ET TITRE----- */
+
+header {
+  margin-bottom: 0px !important ;
+}
+
+h1{
+  font-weight: 400;
+}
+
+
+/* -----SECTION INTRODUCTION----- */
+
+#historique {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 450px;
+  padding: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h2 {
+  margin: 40px 0px;
+  font-size:150%;
+}
+
+#texte_historique {
+  text-align: justify;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+#citation {
+  padding: 70px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#photo_remouleur img {
+  width: 400px;
+}
+
+
+
+/* -----SECTION TIMELINE----- */
+
+#img_timeline {
+  width: 100%;
+}
+
+#timeline_mobile {
+  display: none;
+}
+
+
+/* -----MEDIA QUERIES----- */
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+  /*SECTION INTRODUCTION*/
+  h2 {
+    align-self: center;
+  }
+  .column {
+    width: 90%;
+  }
+  #citation {
+    padding: 2rem;
+  }
+  #photo_remouleur img {
+    width: 300px;
+    align-self: center;
+  }
+
+  /*SECTION TIMELINE*/
+  #img_timeline {
+    display: none;
+  }
+  #timeline_mobile {
+    display: inherit;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  
+  /*TITRE*/
+  .div_titre {
+    width: 90vw;
+  }
+  .titre {
+    font-size: 75%;
+  }
+
+  /*SECTION INTRODUCTION*/
+  #photo_remouleur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #photo_remouleur img {
+    width: 40%;
+  }
+}
+
+

@@ -1,0 +1,300 @@
+/*################################################################### LAME QUI TOURNE ##################################################################*/
+/*################################################################### LAME QUI TOURNE ##################################################################*/
+.divLame {
+  position: absolute;
+  margin-top: 200px;
+}
+.divLame p {
+  background-color: rgba(0, 0, 0, 0.747);
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: absolute;
+  letter-spacing: 2px;
+  border-top: #d70019 solid 2px;
+  font-size: 25px;
+  top: 40%;
+}
+#lame {
+  width: 170px;
+  animation: 8s linear 0s infinite normal backwards;
+  animation-name: rotation;
+  z-index: 0;
+}
+#lame:hover {
+  cursor: pointer;
+  z-index: 0;
+  animation-duration: 2s;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+/*########################################################## SECTION SLIDE #############################################################################*/
+/*########################################################## SECTION SLIDE #############################################################################*/
+.sectionSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: -70px 0px 100px 0px;
+  background-color: black;
+  padding: 80px 0px 80px 0px;
+  border-top: solid 5px #dbaa6a;
+  width: 80%;
+}
+.slideShow {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+#slider {
+  overflow: hidden;
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 30s slidy infinite;
+}
+/*########################################################### ANIMATION DU SLIDE #######################################################################*/
+/*########################################################### ANIMATION DU SLIDE #######################################################################*/
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  70% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+/*######################################################## SECTION HORAIRES & ACTIVITES ###############################################################*/
+/*######################################################## SECTION HORAIRES & ACTIVITES ###############################################################*/
+.imageActivitesSection,
+.imageHorairesSection,
+.activitesSection,
+.activitiesContener,
+.ContenerHoraires {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageActivitesSection,
+.imageHorairesSection {
+  width: 300px;
+  height: auto;
+  padding: 40px;
+}
+.activitesSection {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.activitiesContener,
+.ContenerHoraires {
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 30%;
+  border: solid 1px #dbaa6a;
+  padding: 25px;
+  margin: 10px 0px 10px 0px;
+  transition: all 0.5s;
+}
+.one .horairesPone {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+.one,
+.activitesPlusImage,
+.horairesPLusIMage {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.one {
+  color: #dbaa6a;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.activitiesContener {
+  background-color: black;
+  color: white;
+  z-index: 1;
+  padding: 40px 60px 50px 70px;
+  border: #dbaa6a solid 8px;
+}
+.activitesPlusImage {
+  margin-top: -50px;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.horairesPLusIMage {
+  transition: all 0.5s;
+}
+.ContenerHoraires {
+  background-color: white;
+  padding: 10px 90px 20px 80px;
+}
+.horloge-logo,
+.mains-logo,
+.camion-logo,
+.information-logo {
+  width: 60px;
+  padding: 10px;
+}
+.horairesPLusIMage:hover,
+.activitesPlusImage:hover {
+  transform: scale(1.1);
+}
+.horairesPLusIMage:hover {
+  z-index: 2;
+}
+.horairesPtwo {
+  text-align: center;
+  padding: 20px;
+  width: 95%;
+}
+.horairesPthree {
+  text-align: center;
+  font-weight: 600;
+  color: #d70019;
+}
+/*################################################################## MOTO ##############################################################################*/
+/*################################################################## MOTO ##############################################################################*/
+#idmoto {
+  width: 100%;
+}
+.moto {
+  border: 10px double #000;
+  width: 100%;
+  min-height: 400px;
+  background: url(/img/accueil/moto.jpg) top center;
+  background-size: 100%;
+  margin: 70px 0px 0px 0px;
+  background-attachment: fixed;
+}
+/*############################################################ FACEBOOK / ACTUALITES ###################################################################*/
+/*############################################################ FACEBOOK / ACTUALITES ###################################################################*/
+
+.contener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+.fb-page {
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.46);
+  /* padding: 0px 83px 0px 83px; */
+  background-color: white;
+  margin-bottom: 20px;
+  /* margin-left: 23%; */
+  box-sizing: border-box;
+  background-color: black;
+  margin-bottom: 70px;
+}
+.box {
+  padding: 35px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.527);
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.fb-height {
+  display: none !important;
+}
+.container-fb {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+.container-fb--height {
+  display: none !important;
+}
+.box-height {
+  display: none !important;
+}
+
+/* GOOGLE */
+#carteGoogle {
+  display: flex;
+  width: 80%;
+  overflow: hidden;
+  justify-content: center;
+  margin: 70px 0px 70px 0px;
+}
+/*#################################################################### MEDIA QUERIES ##################################################################*/
+/*#################################################################### MEDIA QUERIES ##################################################################*/
+@media screen and (max-width: 480px) {
+  .horairesPLusIMage,
+  .imageActivitesSection,
+  .imageHorairesSection,
+  .activitesPlusImage {
+    width: 360px;
+  }
+  #nousContacterContener {
+    width: 360px;
+  }
+  .activitesPlusImage {
+    z-index: 0;
+  }
+  .horairesPLusIMage:hover,
+  .activitesPlusImage:hover {
+    transform: scale(1);
+  }
+  .horairesPLusIMage:hover {
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+@media screen and (max-width: 992px) {
+  .fb-height {
+    display: inherit !important;
+    width: 100% !important;
+  }
+  .fb-full {
+    display: none !important;
+  }
+  .container-fb-height {
+    padding: 3px;
+  }
+}

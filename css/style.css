@@ -1,0 +1,520 @@
+/* -----INITIALISATION DE LA PAGE----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: url(img/fond1.png) center fixed;
+  background-size: cover;
+}
+
+
+/* -----HEADER----- */
+
+header {
+  display: flex;
+  height: 11rem;
+  background-color: black;
+  overflow: hidden;
+  border-bottom: solid 5px #dbaa6a;
+  color: white;
+  max-width:100%;
+}
+
+#logo img {
+    height: 11rem;
+}
+
+#contenu_header {
+  display: flex;
+  align-items: center;
+}
+
+/* CARTE CONTACT */
+#liste_imbriquee {
+  display: flex;
+  flex-direction: column;
+  color: rgb(184, 184, 184);
+}
+
+#bloc_contact {
+  font-size: 110%;
+  padding: 1rem 2rem;
+  white-space: nowrap;
+  border-left: #d70019 2px solid;
+  border-right: #d70019 2px solid;
+  margin: 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+
+#mail,
+#telephone,
+#adresse {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(184, 184, 184, 0.226);
+  border-radius: 5px;
+  border: 1px #dbaa6a solid;
+}
+
+#bloc_contact a {
+  color: #d70019;
+}
+
+#mail:hover,
+#telephone:hover {
+  background-color: rgba(184, 184, 184, 0.459);
+  font-weight: 600;
+}
+
+/* SLOGAN */
+#div_slogan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+#slogan {
+  font-size: 240%;
+  color: #d70019;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+}
+
+
+/* -----SECTION MENU ARBRE----- */
+
+#arbre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+#arbre img {
+  width: 44vw;
+}
+
+#liensNav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  display: flex;
+}
+
+#liensNav a,
+select{
+  margin: 6.5rem 9rem;
+  font-size: 140%;
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px #d70019 solid;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  background-color: rgb(255, 255, 255);
+  white-space: nowrap ;
+}
+
+.valeurs{
+  background-color:rgba(214, 214, 214, 0.678);
+}
+
+#liensNav a:hover {
+  color: #d70019;
+  background-color: rgb(184, 184, 184);
+}
+
+#liensNav1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+#liensNav2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#liensNav3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#liensNav4 {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* -----SECTION LOGOS LABELS----- */
+
+#logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#qualité,
+#environnement,
+#artisanat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 110%;
+  opacity: 80%;
+}
+
+#qualité:hover,
+#environnement:hover,
+#artisanat:hover {
+  opacity: 100%;
+}
+
+#logos img {
+  height: 7rem;
+  padding: 2rem;
+}
+
+#logos p {
+  color: #ca985b;
+  font-size: 150%;
+}
+
+#engagement {
+  display: flex;
+  justify-content: center;
+}
+
+#engagement_img {
+  width: 15rem;
+  padding: 2rem;
+}
+
+
+/* -----BANNIERE COOKIES----- */
+
+.btncookie{
+  
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.63);
+  color: rgb(29, 28, 28);
+  padding: 1em 0 1em;
+  text-align: center;
+  position: fixed;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  }
+
+  .sm_footer{
+  background-color:#15aac0;
+  text-align: center;
+  }
+
+  .sm_hidden{
+  visibility: hidden;
+  }
+  
+
+/* -----MEDIA QUERIES----- */
+
+@media (max-width: 549px) and (orientation: portrait) {
+
+  /*HEADER*/
+  header {
+    flex-direction: column;
+    height: 29rem;
+  }
+  #bloc_contact {
+    margin: 0;
+    border: none;
+  }
+  #contenu_header {
+    flex-direction: column;
+  }
+  #slogan {
+    font-size: 130%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /*SECTION MENU ARBRE*/
+  #arbre img {
+    width: 95vw;
+  }
+  #arbre {
+    margin-top: -5rem;
+    padding: 8rem 0 1rem 0;
+  }
+  #liensNav {
+    flex-direction: column;
+    top: 27rem;
+  }
+  #liensNav a,
+  select{
+    margin: 0.4rem;
+    font-size: 75%;
+  }
+  #liensNav2,
+  #liensNav3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*SECTION LOGOS LABELS*/
+  #labels img {
+    height: 3rem;
+  }
+  #labels p {
+    font-size: 100%;
+  }
+  #engagement_img {
+    width: 10rem;
+  }
+}
+
+@media (min-width:549px) and (max-width: 849px) and (orientation: portrait) {
+
+  /*HEADER*/
+  header {
+    flex-direction: column;
+    height: 29rem;
+  }
+  #bloc_contact {
+    margin: 0;
+    border: none;
+  }
+  #contenu_header {
+    flex-direction: column;
+  }
+  #slogan {
+    font-size: 130%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /*SECTION MENU ARBRE*/
+  #arbre img {
+    width: 95vw;
+  }
+  #arbre {
+    margin-top: -5rem;
+    padding: 8rem 0 1rem 0;
+  }
+  #liensNav {
+    flex-direction: column;
+    top: 32rem;
+  }
+  #liensNav a,
+  select {
+    margin: 0.4rem;
+    font-size: 110%;
+  }
+  #liensNav2,
+  #liensNav3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*SECTION LOGOS LABELS*/
+  #labels img {
+    height: 3rem;
+  }
+  #labels p {
+    font-size: 100%;
+  }
+  #engagement_img {
+    width: 10rem;
+  }
+}
+
+@media (min-width:549px) and (max-width: 849px) and (orientation: landscape){
+
+  /*HEADER*/
+  header {
+    flex-direction: column;
+    height: 29rem;
+  }
+  #bloc_contact {
+    margin: 0;
+    border: none;
+  }
+  #contenu_header {
+    flex-direction: column;
+  }
+  #slogan {
+    font-size: 130%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /*SECTION MENU ARBRE*/
+  #arbre img {
+    width: 80vw;
+  }
+  #arbre {
+    margin-top: -5rem;
+    padding: 8rem 0 1rem 0;
+  }
+  #liensNav {
+    flex-direction: column;
+    top: 28rem;
+  }
+  #liensNav a,
+  select {
+    margin: 0.4rem;
+    font-size: 110%;
+  }
+  #liensNav2,
+  #liensNav3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*SECTION LOGOS LABELS*/
+  #labels img {
+    height: 3rem;
+  }
+  #labels p {
+    font-size: 100%;
+  }
+  #engagement_img {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 850px) and (max-width:1300px) and (orientation: landscape) {
+
+  /*HEADER*/
+  header {
+    flex-direction: column;
+    height: 16rem;
+  }
+  #bloc_contact {
+    margin: 0;
+    border: none;
+    padding: 1rem;
+  }
+  #slogan {
+    font-size: 130%;
+    white-space: normal;
+    text-align: center;
+  }
+  #logo img {
+    height: 110%;
+  }
+  #logo {
+    height: 5rem;
+  }
+  
+  /*SECTION MENU ARBRE*/
+  #arbre img {
+    width: 75vw;
+  }
+  #arbre {
+    margin-top: -5rem;
+    padding: 8rem 0 1rem 0;
+  }
+  #liensNav {
+    flex-direction: column;
+    top: 22rem;
+  }
+  #liensNav a,
+  select {
+    margin: 0.6rem;
+    font-size: 120%;
+  }
+  #liensNav2,
+  #liensNav3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*SECTION LOGOS LABELS*/
+  #labels img {
+    height: 3rem;
+  }
+  #labels p {
+    font-size: 100%;
+  }
+  #engagement_img {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1025px) and (orientation: portrait) {
+
+  /*HEADER*/
+  header {
+    height: 15rem;
+  } 
+  #bloc_contact {
+    margin-top: 0;
+    border: none;
+  }
+  #slogan {
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+  }
+
+  /*SECTION MENU ARBRE*/
+  #liensNav {
+    margin: 0;
+    flex-direction: column;
+    top: 10rem;
+  }
+  #liensNav a,
+  select {
+    margin: 4rem;
+    font-size: 110%;
+  }
+}
+
+@media (min-width: 1600px) and (max-width:1800px)and (orientation: landscape){
+
+  #liensNav4{
+    margin-top:3rem;
+  }
+}
+
+@media (min-width: 1801px) and (orientation: landscape){
+
+  #liensNav a,
+  select{
+    margin:9rem;
+    font-size:200%;
+  }
+  #liensNav4{
+    margin-top:-10rem;
+  }
+}

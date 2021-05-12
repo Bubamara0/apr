@@ -1,0 +1,209 @@
+header {
+  margin-bottom: 0px !important ;
+}
+/*#################################################################### PARAMETRES DE LA PAGE #########################################################*/
+/*#################################################################### PARAMETRES DE LA PAGE #########################################################*/
+h2 {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h2:first-letter {
+  color: red;
+}
+
+/*############################################################# PARAMETRES DES SECTIONS ##############################################################*/
+/*############################################################# PARAMETRES DES SECTIONS ##############################################################*/
+.sectionsEquipe,
+.contenerDesDeuxDivs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sectionsEquipe {
+  flex-flow: column;
+  margin-bottom: 70px;
+  width: 100%;
+}
+.contenerDesDeuxDivs {
+  flex-flow: row wrap;
+  width: 90%;
+  background: url(/img/equipe/7.png) fixed;
+  background-size: cover;
+  box-shadow: 1px 1px 12px 1px;
+  overflow: hidden;
+}
+/*##################################################################### PARTIE AVEC LA PHOTO + AVATAR ##########################################*/
+/*##################################################################### PARTIE AVEC LA PHOTO + AVATAR ##########################################*/
+.divPhoto {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  overflow: hidden;
+  margin: 40px;
+  box-shadow: 5px 5px 15px 2px;
+}
+.uno {
+  transform: rotate(5deg);
+}
+.dos {
+  transform: rotate(-5deg);
+}
+.punaise {
+  width: 60px;
+  position: absolute;
+  margin-top: -300px;
+}
+.photoEquipe {
+  width: 100%;
+}
+.avatarEquipe {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100px;
+}
+/*##################################################################### Partie avec le slogan ##########################################################*/
+/*##################################################################### Partie avec le slogan ##########################################################*/
+.conteneurLogoTechnique,
+.conteneurLogoResponsable,
+.conteneurLogoCommercial,
+.conteneurLogoAffuteur,
+.conteneurLogoAssistante,
+.conteneurLogohote {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-direction: alternate;
+}
+/*######################################################################### LES LOGOS ################################################################*/
+/*######################################################################### LES LOGOS ################################################################*/
+
+.conteneurLogoTechnique {
+  background-image: url(/img/equipe/Technique.png);
+}
+.conteneurLogoResponsable {
+  background-image: url(/img/equipe/Responsable.png);
+}
+.conteneurLogoCommercial {
+  background-image: url(/img/equipe/Commercial.png);
+}
+.conteneurLogoAssistante {
+  background-image: url(/img/equipe/AssistanteDirection.png);
+}
+.conteneurLogoAffuteur {
+  background-image: url(/img/equipe/lame1.png);
+}
+.conteneurLogohote {
+  background-image: url(/img/equipe/HoteAccueil.png);
+}
+.pMetierEquipe {
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.747);
+  text-align: center;
+  width: 180px;
+  color: white;
+  padding: 2px;
+}
+/*##################################################################### ANIMATION DES LOGOS ##########################################################*/
+/*##################################################################### ANIMATION DES LOGOS ##########################################################*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*################################################################## PARAMETRES DES SLOGANS #############################################################*/
+/*################################################################## PARAMETRES DES SLOGANS #############################################################*/
+.conteneurDivSlogan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+}
+.divImageSlogan {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 25px;
+}
+.divSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 200px;
+  background: url(equipe/quote.png) center no-repeat;
+  background-size: cover;
+}
+.slogan {
+  width: 300px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/*################################################################ PATAMETRES DES BULLES ############################################################*/
+/*################################################################ PATAMETRES DES BULLES ############################################################*/
+.un,
+.deux,
+.trois {
+  position: absolute;
+  border-radius: 90%;
+}
+.un,
+.deux {
+  background-color: white;
+  margin-top: -30px;
+  border: solid rgb(146, 135, 135) 1px;
+  padding: 20px;
+}
+.un {
+  margin-left: 50px;
+}
+.deux {
+  margin-left: -80px;
+}
+.trois {
+  background-color: rgb(146, 135, 135);
+  padding: 12px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.ulUnDeuxTrois {
+  display: flex;
+  flex-flow: row wrap;
+}
+/* ###################################################################### MEDIA QUERIES ###########################################################  */
+/* ###################################################################### MEDIA QUERIES ###########################################################  */
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .divPhoto {
+    height: 200px;
+  }
+}

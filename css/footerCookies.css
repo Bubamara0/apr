@@ -1,0 +1,118 @@
+/*####################################################################### cookies ##################################################################*/
+/*####################################################################### cookies ##################################################################*/
+.btncookie {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.63);
+  color: rgb(29, 28, 28);
+  padding: 1em 0 1em;
+  text-align: center;
+  position: fixed;
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  /* visibility: hidden; */
+}
+/* pas obligatoire ".p-cookie */
+/* .p-cookie {
+			padding: 20px;
+		} */
+.sm_footer {
+  text-align: center;
+}
+.sm_hidden {
+  visibility: hidden;
+}
+/*####################################################################### FOOTER ###################################################################*/
+/*####################################################################### FOOTER ###################################################################*/
+footer,
+.ligneFooter,
+.divLogoFooter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer {
+  background-color: black;
+  padding: 15px;
+  border-top: #dbaa6a 3px solid;
+  flex-flow: row wrap;
+}
+.ligneFooter {
+  width: 100%;
+  flex-flow: row wrap;
+}
+.divLogoFooter {
+  flex-direction: column;
+  margin: 5px;
+  width: 70px;
+}
+.divLogoFooter img {
+  width: 100%;
+}
+.divLogoFooter p {
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 18px;
+}
+.logosFooter {
+  padding: 10px;
+  width: 50px;
+  margin: 10px;
+  border: 3px white solid;
+  border-radius: 100%;
+}
+/*######################################################## MENTIONS LEGALES #########################################################################*/
+/*######################################################## MENTIONS LEGALES #########################################################################*/
+.pMentions {
+  display: flex;
+  align-items: center;
+  color: #d70019;
+  text-align: center;
+  background-color: black;
+  border: double 2px #dbaa6a;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.pMentions img {
+  width: 30px;
+  padding-left: 10px;
+}
+.mentionsLegalesContener {
+  display: flex;
+  flex-direction: column;
+  color: rgb(110, 105, 105);
+  display: none;
+  align-items: center;
+}
+
+.mentionsLegalesContener h3,
+.mentionsLegalesContener h2 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 20px;
+  color: #d70019;
+  padding: 20px;
+  border-top: 2px #dbaa6a solid;
+}
+.mentionsLegalesContener {
+  width: 90%;
+}
+.mentionsLegalesContener p {
+  padding: 40px;
+  text-align: justify;
+}
+
+.containerUlFooter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.copyright {
+  color: rgb(110, 105, 105);
+  font-size: 12px;
+}

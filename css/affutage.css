@@ -1,0 +1,298 @@
+/* -----HEADER ET TITRE----- */
+
+header {
+  margin-bottom: 0px !important ;
+}
+
+#sous_titre {
+  color: rgb(59, 59, 59);
+  font-size: 120%;
+}
+
+
+/* -----SECTION CADRE----- */
+
+#cadre_noir {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+#texte_cadre {
+  background-color: black;
+  border: rgb(201, 172, 109) 8px solid;
+  border-radius: 5px;
+  height: 12rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+#question {
+  color: #dbaa6a;
+  font-size: 150%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+#question::first-letter {
+  font-size: 150%;
+}
+
+#reponse {
+  color: white;
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+
+/* -----SECTION OUTILS----- */
+
+#outils {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.caption {
+  font-size: 110%;
+  font-weight: 600;
+  margin: 2rem;
+  max-width: 90vw;
+  line-height: 1.7rem;
+}
+
+.caption a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #d70019;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.caption a:hover {
+  color: #d70019;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #d70019 2px solid;
+  width: 45rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.row p {
+  width: 18rem;
+}
+
+.texte {
+  border: solid #838383 1px;
+  border-radius: 2px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 1rem 1rem;
+  height: 15rem;
+}
+
+.photo {
+  overflow: hidden;
+  margin: 1rem 1rem 1rem 0.8rem;
+}
+
+.photo img {
+  height: 19.3rem;
+  border-radius: 2px;
+}
+
+.type_outils {
+  font-size: 150%;
+}
+
+.liste_outils {
+  padding: 1rem;
+}
+
+
+/* -----ANIMATIONS----- */
+
+/* LAME */
+#lame_affutage {
+  width: 30%;
+  position: absolute;
+  top: 5rem;
+  padding: 15rem;
+  left: -35rem;
+  animation-duration: 25s;
+  animation-name: lame_affutage;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lame_affutage {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* APPARITION JAVASCRIPT */
+.droite {
+  opacity: 0;
+  position: relative;
+  left: 100px;
+  transition-duration: 0.5s;
+}
+
+.gauche {
+  opacity: 0;
+  position: relative;
+  right: 100px;
+  transition-duration: 0.5s;
+}
+
+.fondu {
+  opacity: 0;
+  position: relative;
+  transition-duration: 2s;
+}
+
+
+/* -----MEDIA QUERIES----- */
+
+@media (max-width: 750px) {
+  
+/*TITRE ET SOUS-TITRE*/
+  #sous_titre {
+    width: 50%;
+    font-size: 90%;
+    text-align: center;
+  }
+
+/*SECTION CADRE*/
+  #texte_cadre {
+    align-self: center;
+    width: 10rem;
+    height: 20rem;
+  }
+  #cadre_noir {
+    margin: 3rem 0 3rem 0;
+  }
+  #question {
+    font-size: 110%;
+    padding: 0 0 0.5rem 0;
+  }
+  #reponse {
+    padding: 1rem 0 0 0;
+    margin: 0;
+    font-size: 80%;
+    line-height: 20px;
+  }
+
+/*SECTION OUTILS*/
+  #outils {
+    width: 100vw;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: 0.5rem 0;
+  }
+  .texte {
+    width: 70vw;
+    margin: 1rem;
+    height: 8rem;
+  }
+  .photo {
+    max-width: 90vw;
+  }
+  .caption {
+    font-size: 110%;
+    width: 15rem;
+    padding: 0;
+    line-height: 1.6rem;
+  }
+  .caption a {
+    white-space: nowrap;
+    padding: 0.2rem;
+  }
+ 
+/*ANIMATIONS*/
+  #lame_affutage {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+ 
+}
+
+/*   
+  @media screen and (max-width: 850px) and (orientation : landscape){
+   
+    
+  
+  
+  }
+  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation : portrait) {
+    
+  
+  }
+  
+  
+  @media screen and (min-device-width : 768px) and (max-device-width : 1025px) and (orientation : portrait) {
+   
+  }
+  @media screen and (min-device-width : 768px) and (max-device-width : 1025px) and (orientation : landscape) {
+  
+  
+  } */
+
+@media screen and (min-width: 1500px) and (max-width: 1800px) and (orientation: landscape) {
+  #lame_affutage {
+    width: 32%;
+    top: 10rem;
+    margin-left: -2rem;
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2100px) and (orientation: landscape) {
+  #lame_affutage {
+    width: 32%;
+    top: 13rem;
+    margin-left: -5rem;
+  }
+}
+
+@media screen and (min-width: 2100px) and (max-width: 2600px) and (orientation: landscape) {
+  #lame_affutage {
+    width: 32%;
+    top: 18rem;
+    margin-left: -8rem;
+  }
+}
+@media screen and (min-width: 2600px) and (orientation: landscape) {
+  #lame_affutage {
+    width: 32%;
+    top: 27rem;
+    margin-left: -17rem;
+  }
+}

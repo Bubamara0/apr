@@ -1,0 +1,126 @@
+header {
+  margin: 0 !important;
+}
+/*########################################################## SECTION REMERCIEMENTS ####################################################################*/
+/*########################################################## SECTION REMERCIEMENTS ####################################################################*/
+.remerciements {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  margin: 70px 0px 70px 0px;
+  background-color: white;
+}
+/*######################################################### SECTION CARTES DE REMERCIEMENTS #########################################################*/
+/*######################################################### SECTION CARTES DE REMERCIEMENTS #########################################################*/
+.decoFond,
+.divMerciSection2,
+.contenerCartesMerci,
+.cartesMerci {
+  display: flex;
+  align-items: center;
+}
+.decoFond {
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-image: url(/img/menu/fond1.png);
+}
+.phraseAccroche {
+  padding: 20px;
+  text-align: center;
+  color: #dbaa6a;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 600;
+}
+.divMerciSection2 {
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 50px 0px 70px 0px;
+  width: 100%;
+  text-align: center;
+  color: #d70019;
+  background-color: rgb(255, 255, 255);
+}
+.merciSection2 {
+  width: 50%;
+  font-weight: 600;
+}
+.contenerCartesMerci {
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 65%;
+}
+.cartesMerci {
+  justify-content: space-between;
+  flex-flow: column;
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  padding-bottom: 40px;
+  position: relative;
+  text-align: center;
+  border: solid 2px #dbaa6a;
+  box-shadow: 1px 1px 5px 1px;
+  border-radius: 25px;
+  margin: 10px 0px 10px 0px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.moins {
+  padding-bottom: 0px !important;
+  height: 190px !important;
+}
+.background {
+  width: 100%;
+  height: 190px;
+  background-size: 100%;
+}
+.backgroundVeterinaire {
+  background-image: url(/img/clients/Veterinaire.jpg);
+}
+.backgroundCarotteuse {
+  background-image: url(/img/clients/carotteuse.jpg);
+}
+.backgroundPVC {
+  background-image: url(/img/clients/fenetre.jpg);
+}
+.backgroundAlimentaire {
+  background-image: url(/img/clients/restaut.jpg);
+}
+.backgroundCiseaux {
+  background-image: url(/img/clients/ciseauxBois.jpg);
+}
+.backgroundSecateur {
+  background-image: url(/img/clients/secateur.jpg);
+}
+.cartesMerci a {
+  color: black;
+  font-family: "Comic Sans MS", cursive;
+  transition: all 0.5s;
+}
+.cartesMerci a:hover {
+  font-size: 110%;
+  color: #d70019;
+}
+.pro {
+  font-size: 13px;
+}
+.divImageMerci {
+  width: 300px;
+}
+.divImageMerci p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.596);
+  padding: 10px 0px 10px 0px;
+}
