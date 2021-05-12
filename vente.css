@@ -158,6 +158,84 @@ td{
 #diapo_boutique a{
   padding:0.2rem;
 }
+/*test slide*/
+
+@keyframes AutoSlide {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+  8%{
+    left: 0px; /*idem pour attente*/
+  }
+	16% {
+		left : -337px; /*2ème image*/
+	}
+	24% {
+		left : -337px; /*2ème image*/
+	}
+	33% {
+		left : -672px; /*idem pour attente*/
+	}
+	41% {
+		left: -672px; /*3ème image*/
+	}
+	49% {
+		left : -1009px; /*idem pour attente*/
+	}
+	58% {
+		left : -1009px; /*1ère image*/
+	}
+
+  66% {
+		left: -1346px; /*1ère image*/
+	}
+
+  74% {
+		left: -1346px; /*1ère image*/
+	}
+
+  83% {
+		left: -1683px; /*1ère image*/
+	}
+  91% {
+		left: -1683px; /*1ère image*/
+	}
+  100% {
+		left: 0px; /*1ère image*/
+	}
+
+}
+#slideshow img{
+  width:55.5%;
+}
+
+#slideshow {
+	position: relative;
+  white-space: nowrap;
+	width: 337px;
+	height: 600px;
+	margin-bottom:10rem;
+	overflow: hidden;
+}
+
+#sContent li {
+	display:inline;
+}
+
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px;
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
 
 
 @media screen and (max-width: 480px) and (orientation : portrait){
