@@ -1,22 +1,21 @@
+/* -----HEADER ET TITRE----- */
+
 header {
   margin-bottom: 0px !important ;
 }
-/*------TITRE------*/
 
 .div_titre{
-  
   position: absolute;
-
-  top:25rem;
-  
+  top:25rem; 
 }
 
 .titre:before, 
 .titre:after{
- 
   width:150%;
-
 }
+
+
+/* -----PRÉSENTATION DES TOURNÉES----- */
 
 #presentation {
   display: flex;
@@ -28,34 +27,6 @@ header {
 #presentation p {
   width: 25rem;
 }
-
-#gif {
-  display: flex;
-  justify-content: center;
-}
-
-#camion {
-  border: 4px solid #d3bc7d;
-  margin: 5rem;
-}
-
-#photoCamion{
-    width:40rem;
-}
-
-#objectif {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#photoCamion{
-    margin-right:30rem;
-    margin-bottom:30rem;
-    border-radius: 1%;
-}
-
-
 
 #texte_presentation{
   display: flex;
@@ -76,98 +47,95 @@ header {
   align-items: center;  
 }
 
-#texteObjectif{
-    display: flex;
-    flex-direction: column;
-    background-color: #070707;
-    max-width:35rem;
-    color:white;
-    position: absolute;
-    right:14rem;
-    padding:1rem 4rem;
+
+/* -----CADRE FOND NOIR ET PHOTO----- */
+
+#objectif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo_camion{
+    margin-right:30rem;
+    margin-bottom:30rem;
     border-radius: 1%;
-    line-height: 2rem;
-    box-shadow: 10px 8px rgba(0, 0, 0, 0.185);
-    border: 8px solid #dbaa6a;
+    width:40rem;
 }
 
-#titreObjectif {
-  font-size: 180%;
-  font-weight: 600;
-  color: #dbaa6a;
-  letter-spacing: 2px;
-  text-align: center;
+#texte_objectif{
+  display: flex;
+  flex-direction: column;
+  background-color: #070707;
+  max-width:35rem;
+  color:white;
+  position: absolute;
+  right:14rem;
+  padding:1rem 4rem;
+  border-radius: 1%;
+  line-height: 2rem;
+  box-shadow: 10px 8px rgba(0, 0, 0, 0.185);
+  border: 8px solid #dbaa6a;
 }
 
-#titreObjectif::first-letter{
-  font-size:200%;
+#titre_objectif {
+font-size: 180%;
+font-weight: 600;
+color: #dbaa6a;
+letter-spacing: 2px;
+text-align: center;
+}
+
+#titre_objectif::first-letter{
+font-size:200%;
 }
 
 #objectif p {
-  margin: 1rem;
+margin: 1rem;
 }
 
 #objectif a {
-  text-decoration: none;
-  color: #d70019;
-  font-weight: 600;
-  font-size: 140%; 
+text-decoration: none;
+color: #d70019;
+font-weight: 600;
+font-size: 140%; 
 }
 
 #objectif a:hover{
-   color: #d70019;
+ color: #d70019;
 }
 
 #contacter{
-  text-align: center;
+text-align: center;
 }
 
 #contacter a{
-  color:white;
-  border:1px #d70019 solid;
-  padding:7px;
-  border-radius: 15px;
+color:white;
+border:1px #d70019 solid;
+padding:7px;
+border-radius: 15px;
 }
 
 #contacter a:hover{
-  transition:0.8s;
-  color:red;
+transition:0.8s;
+color:red;
 }
 
-.ruban{
-  width:150%;
+
+/* -----GIF CAMION----- */
+
+#gif {
+  display: flex;
+  justify-content: center;
 }
 
-div.ruban{
-  animation-duration: 20s;
-  animation-name: defilement;
-  animation-timing-function:ease;
-  animation-iteration-count: infinite;
+#camion {
+  border: 4px solid #d3bc7d;
+  margin: 5rem;
 }
 
-@keyframes defilement{
-  0%{margin-left:-300px;} 
-  10%{margin-left:-200px;}
-  20%{margin-left:-100px;}
-  40%{margin-left:0;}
-  60%{margin-left:-100px;}
-  80%{margin-left:-200px;}
-  100%{margin-left:-300px;}
-}
 
-.ok {
-  opacity: 0;
-  position: relative;
-  left: 100px;
-  transition-duration: 0.5s;
-}
-
-.bk {
-  opacity: 0;
-  position: relative;
-  right: 100px;
-  transition-duration: 0.5s;
-}
+/* -----ANIMATION ROUTE ET APPARITION JS----- */
 
 .ck {
   opacity: 0;
@@ -186,25 +154,22 @@ div.ruban{
 }
 
 
+/* -----MEDIA QUERIES----- */
 
+@media (max-width: 480px) and (orientation: portrait) {
 
-
-
-
-
-
-@media screen and (max-width: 480px) {
- 
-   #presentation{
-    display: flex;
-    justify-content: center;
-    max-width:100vw;
+  #route{
+    display:none;
   }
-  .titre{
+
+  /*TITRE*/
+ .titre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:0;
+    margin:0;
   }
   .titre:before, 
   .titre:after{
@@ -218,9 +183,12 @@ div.ruban{
     top:0;
     position:relative;
   }
-  
-  #route{
-    display:none;
+
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
   }
   #texte_presentation{
     font-size:90%;
@@ -230,6 +198,8 @@ div.ruban{
     max-width:80vw;
     margin:1rem;
   }
+  
+  /*CADRE FOND NOIR ET PHOTO*/
   #objectif{
     display: flex;
     flex-direction: column-reverse;
@@ -241,8 +211,7 @@ div.ruban{
     margin:0;
     padding:0;
   }
-  
-  #texteObjectif{
+  #texte_objectif{
     width:18rem;
     margin: 2rem 0 2rem 28rem;
     padding:1rem;
@@ -251,34 +220,182 @@ div.ruban{
     align-self: center;
     position: relative;
   }
-  #texteObjectif p{
+  #texte_objectif p{
     width:17rem;
     text-align: center;
   }
-  #photoCamion{
+  #photo_camion{
     transition: none;
     width:95vw;
     margin:3rem 0;
     padding:0;
-  
   }
+  
+  /*GIF CAMION*/
   #camion{
     max-width:90vw;
     margin:2rem 0 15rem 0;
   }
+}
 
+@media (max-width: 850px) and (orientation: landscape) {
+  #route{
+    display:none;
+  }
 
+  /*TITRE*/
+ .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position:relative;
+  }
 
-/* @media screen and (min-width: 481px) and (max-width: 767px) {
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #texte_presentation{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
   
+  /*CADRE FOND NOIR ET PHOTO*/
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #texte_objectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texte_objectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photo_camion{
+    transition: none;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  }
+  
+  /*GIF CAMION*/
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
 }
-​
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+@media (min-width: 720px) and (max-width:1025px) and (orientation: portrait) {
+  #route{
+    display:none;
+  }
 
+  /*TITRE*/
+ .titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+  }
+  .titre:before, 
+  .titre:after{
+   width:80%;
+  }
+  .div_titre{
+    width:50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    position:relative;
+  }
 
-} */
+  /*PRÉSENTATION DES TOURNÉES*/
+  #presentation{
+    display: flex;
+    justify-content: center;
+    max-width:100vw;
+  }
+  #texte_presentation{
+    font-size:90%;
+    height:19rem;
+    text-align: center;
+    padding:1rem;
+    max-width:80vw;
+    margin:1rem;
+  }
+  
+  /*CADRE FOND NOIR ET PHOTO*/
+  #objectif{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform: none;
+    max-width: 100vw;
+    margin:0;
+    padding:0;
+  }
+  #texte_objectif{
+    width:18rem;
+    margin: 2rem 0 2rem 28rem;
+    padding:1rem;
+    font-size:100%;
+    max-width:100vw;
+    align-self: center;
+    position: relative;
+  }
+  #texte_objectif p{
+    width:17rem;
+    text-align: center;
+  }
+  #photo_camion{
+    transition: none;
+    width:95vw;
+    margin:3rem 0;
+    padding:0;
+  }
+  
+  /*GIF CAMION*/
+  #camion{
+    max-width:90vw;
+    margin:2rem 0 15rem 0;
+  }
 }
-
-
-/* <a href="OFFRES.pdf" download="offres.pdf">Download Text</a> */
