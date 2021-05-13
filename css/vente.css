@@ -206,11 +206,8 @@ header {
   /*TITRE*/
   .div_titre {
     width: 90vw;
-    margin: 2rem 0;
+    margin: 0;
     padding: 0;
-  }
-  .titre {
-    font-size: 70%;
   }
 
   /*SECTION VENTE OUTILS*/
@@ -225,6 +222,7 @@ header {
     font-size: 120%;
     width: 90vw;
     padding: 2rem 0;
+    text-align: center;
   }
   #texte_vente ul {
     width: 90vw;
