@@ -31,7 +31,7 @@ h2:first-letter {
 .contenerDesDeuxDivs {
   flex-flow: row wrap;
   width: 90%;
-  background: url(/img/equipe/7.png) fixed;
+  background: url(../img/equipe/7.png) fixed;
   background-size: cover;
   box-shadow: 1px 1px 12px 1px;
   overflow: hidden;
