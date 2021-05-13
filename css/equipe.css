@@ -91,22 +91,22 @@ h2:first-letter {
 /*######################################################################### LES LOGOS ################################################################*/
 
 .conteneurLogoTechnique {
-  background-image: url(/img/equipe/Technique.png);
+  background-image: url(../img/equipe/Technique.png);
 }
 .conteneurLogoResponsable {
-  background-image: url(/img/equipe/Responsable.png);
+  background-image: url(../img/equipe/Responsable.png);
 }
 .conteneurLogoCommercial {
-  background-image: url(/img/equipe/Commercial.png);
+  background-image: url(../img/equipe/Commercial.png);
 }
 .conteneurLogoAssistante {
-  background-image: url(/img/equipe/AssistanteDirection.png);
+  background-image: url(../img/equipe/AssistanteDirection.png);
 }
 .conteneurLogoAffuteur {
-  background-image: url(/img/equipe/lame1.png);
+  background-image: url(../img/equipe/lame1.png);
 }
 .conteneurLogohote {
-  background-image: url(/img/equipe/HoteAccueil.png);
+  background-image: url(../img/equipe/HoteAccueil.png);
 }
 .pMetierEquipe {
   white-space: nowrap;
@@ -156,7 +156,7 @@ h2:first-letter {
   align-items: center;
   width: 330px;
   height: 200px;
-  background: url(equipe/quote.png) center no-repeat;
+  background: url(../img/equipe/quote.png) center no-repeat;
   background-size: cover;
 }
 .slogan {
