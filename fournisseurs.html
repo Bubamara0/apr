@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fournisseurs.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Fournisseurs</title>
+  </head>
+  <!--##############################################################3 page fournisseurs ###############################################################-->
+  <body>
+    <header>
+      <div id="contenerHeader">
+        <div class="divLogo">
+          <a href="index2.html#logo">
+            <img id="logo" src="menu/header_logo.png"
+          /></a>
+        </div>
+        <div class="headerDroite">
+<!--########################################################### MINI MENU  ######################################################################### -->
+<!--########################################################### MINI MENU  ######################################################################### -->
+          <nav>
+            <ul class="miniMenu">
+              <li><a class="borderRight" href="histoire.html">L'histoire d'APR</a></li>
+              <li><a href="index2.html#nousContacter">Nous contacter</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+<!--######################################################## FIN MINI MENU  ######################################################################### -->
+<!--######################################################### MENU PRINCIPAL ######################################################################### -->
+      <div id="white">
+        <ul class="menu">
+          <li class="equipe">
+            <a href="index2.html"
+              ><span
+                style="
+                  font-family: Comic Sans MS;
+                  font-size: 25px;
+                  color: #E2001A;
+                  font-style: italic;
+                "
+                >A</span
+              >CCUEIL</a
+            >
+          </li>
+          <form name="formListe">
+            <select name="liste" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="index2.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="clients.html">NOS CLIENTS</a></li>
+        </ul>
+      </div>
+<!--########################################################### MENU SECONDAIRE ######################################################################### -->
+<!--########################################################### MENU SECONDAIRE ######################################################################### -->
+      <div class="menuDeux">
+        <ul class="menu">
+          <li><a href="index2.html">ACCUEIL</a></li>
+          <form name="formListe2">
+            <select name="liste2" onchange="change()" size="1">
+              <option value="aucun">NOS ACTIVITÉS</option>
+              <option value="affutage.html">Affûtage</option>
+              <option value="tournees.html">Tournées</option>
+              <option value="vente.html">Vente</option>
+            </select>
+          </form>
+          <li><a href="index2.html#nosActualites">NOS ACTUALITÉS</a></li>
+          <li><a href="equipe.html">L'ÉQUIPE</a></li>
+          <li><a href="fournisseurs.html">NOS FOURNISSEURS</a></li>
+          <li><a href="clients.html">NOS CLIENTS</a></li>
+          <li><a href="index2.html#nousContacter">NOUS CONTACTER</a></li>
+        </ul>
+      </div>
+ <!--########################################################### FIN MENU DEUX  ######################################################################### -->
+<!--################################################################# FIN MENU DEUX  ######################################################################### -->
+<!-- ########################################################### MENU BURGER ################################################################-->
+<nav class="nav-wrapper">
+  <div class="navigation">
+    <ul class="nav-items">
+      <li><a href="index2.html">ACCUEIL</a></li>
+            <li><a href="affutage.html">AFFUTAGE</a></li>
+            <li><a href="vente.html">VENTE</a></li>
+            <li><a href="tournees.html">TOURNÉES</a></li>
+            <li><a href="#nosActualites">NOS ACTUALITÉS</a></li>
+            <li><a href="equipe.html">L'ÉQUIPE</a></li>
+            <li><a href="fournisseurs.html">NOS FOURNISSEURS</a></li>
+            <li><a href="clients.html">NOS CLIENTS</a></li>
+            <li><a href="histoire.html">L'HISTOIRE D'APR</a></li>
+            <li><a href="#nousContacter">NOUS CONTACTER</a></li>
+    </ul>
+    <button class="nav-toogler">☰</button>
+  </div>
+</nav>
+<!--################################################################# FIN MENU BURGER ############################################################-->
+    </header>
+    <main>
+<!-- ############################################################## SECTION BEST OFFRES ############################################################-->
+<!-- ############################################################## SECTION BEST OFFRES ############################################################-->
+      <section class="sectionBestOffres">
+        <div class="div_titre">
+          <p class="titre" id="bestOffres">BEST OFFRES</p>
+        </div>
+        <div class="offre border">
+          <img
+            class="imgPartenaires"
+            src="partenaires/makita-1.png"
+            alt="logo makita"
+          />
+          <div class="offreContenu">
+            <p class="plusMargin">
+              MAKITA, est spécialisé dans la conception d'outils portatifs
+              électriques, sans-fil, pneumatique et thermique.
+            </p>
+            <ul class="ul2">
+              <li>Percer, visser, fixer</li>
+              <li>Perforer, buriner, carotter</li>
+              <li>Découper, rainurer</li>
+              <li>Grignoter, cisailler</li>
+              <li>Meuler, polir, surfacer</li>
+              <li>Poncer</li>
+              <li>Raboter, défoncer</li>
+              <li>Clouer, agrafer</li>
+              <li>Aspirer</li>
+              <li>Mesurer</li>
+              <li>Tronçonner, scier</li>
+              <li>Couper, Débroussailler</li>
+            </ul>
+          </div>
+        </div>
+        <div class="offre">
+          <img
+            class="imgPartenaires"
+            src="partenaires/leman.jpg"
+            alt="logo leman"
+          />
+          <div class="offreContenu">
+            <p>
+              LEMAN est spécialisé dans la conception et la distribution
+              d'outillages pour le bois, la construction et l'industrie.
+            </p>
+            <ul class="ul2">
+              <li>Outillage diamant</li>
+              <li>Découpe de métaux & matériaux</li>
+              <li>Abrasifs</li>
+              <li>Electroportatifs & accessoires</li>
+              <li>Travail du bois</li>
+            </ul>
+          </div>
+        </div>
+        <div class="offre border">
+          <img
+            class="imgPartenaires"
+            src="partenaires/alsafix.png"
+            alt="logo Alsafix"
+          />
+          <div class="offreContenu">
+            <p class="plusMargin">
+              ALSAFIX est une entreprise spécialisée dans la fixation
+              professionnelle :
+            </p>
+            <ul class="ul1">
+              <li>Agrafage</li>
+              <li>Clouage</li>
+              <li>Perçage</li>
+              <li>Chevillage</li>
+              <li>Vissage</li>
+              <li>Découpe</li>
+              <li>Connecteurs</li>
+              <li>Air comprimé</li>
+              <li>Ligatureuses</li>
+            </ul>
+          </div>
+        </div>
+        <div class="offre">
+          <img
+            class="imgPartenaires"
+            src="partenaires/virutex.png"
+            alt="logo virutex"
+          />
+          <div class="offreContenu">
+            <p class="plusMargin">
+              VIRUTEX est un fabricant de machines pour le travail du bois. La
+              marque espagnole est reconnue pour proposer des produits robustes
+              et ergonomiques répondant à un haut niveau d’exigence en termes de
+              précision et de protection de l’utilisateur (aussi bien
+              professionnel que particulier).
+            </p>
+            <ul class="ul1">
+              <li>Aspirateur</li>
+              <li>Meuleuse</li>
+              <li>Encolleuse</li>
+              <li>Rabot</li>
+              <li>Ponceuse</li>
+              <li>Satineuse</li>
+              <li>Affleureuse / Défonceuse</li>
+            </ul>
+            <p class="dernierP">
+              Accessoires Professionnels (lève porte, rapporteur d'angle,
+              poignée de transport...)
+            </p>
+          </div>
+        </div>
+      </section>
+ <!--##################################################### SECTION FOURNISSEURS ############################################################-->
+ <!--##################################################### SECTION FOURNISSEURS ############################################################-->
+      <section class="partenairesSections">
+        <div class="scroll">
+          <h2>Outils pour bois, PVC, alu, acier :</h2>
+          <div class="fournisseurs scroller">
+            <div class="petitesDivs">
+              <a href="https://www.ake.de/"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/ake-logo.png"
+                  alt="logo AKE"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <a href="https://elbe.fr/"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/elbe-logo.png"
+                  alt="logo elbe"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <a href="https://www.forezienne.com/fr/"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/Forezienne-Horizontal-logo.png"
+                  alt="logo forezienne"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <a href="https://www.cmtorangetools.com/na-en/"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/CMT-logo.webp"
+                  alt="logo CMT"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <img
+                class="logosPartenaires"
+                src="partenaires/OUTILS/freud-logo.png"
+                alt="logo FreudRiss"
+              />
+            </div>
+            <div class="petitesDivs">
+              <a href="https://www.leut.it/index_fr.html"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/leut-logo.png"
+                  alt="logo leut"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <a href="http://www.aliprandi.it/"
+                ><img
+                  class="logo-Aliprandi"
+                  src="partenaires/OUTILS/aliprandi-logo.jpg"
+                  alt="logo aliprandi"
+              /></a>
+            </div>
+            <div class="petitesDivs">
+              <a href="http://www.cidiesseutensili.it/"
+                ><img
+                  class="logosPartenaires"
+                  src="partenaires/OUTILS/cidiesse-logo.gif"
+                  alt="logo cidiesseutensili"
+              /></a>
+            </div>
+          </div>
+        </div>
+  <!--############################################################ Deuxième scroll ##################################################################-->
+
+
+  <div class="scroll">
+    <h2>Produits pour le travail du bois :</h2>
+    <div class="fournisseurs scroller">
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/Briançon-logo.png"
+          alt="logo Briançon"
+        />
+      </div>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/Hermes-logo.png"
+          alt="logo hermes"
+        />
+      </div>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/Silber-logo.png"
+          alt="logo silber"
+        />
+      </div>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/collanti-logo.png"
+          alt="collanti"
+        />
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.laguiole-david.com/fr/"></a
+        ><img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/arbalete-logo.jpg"
+          alt="logo arbalete"
+        />
+      </div>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/DMT_logo.jpg"
+          alt="logo dmt"
+        />
+      </div>
+      <div class="petitesDivs">
+        <a href="https://bostitch.fr/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/bostitch-logo.jpeg"
+            alt="logo bostitch"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a
+          href="https://ugears-models.fr/?gclid=EAIaIQobChMIhLny2fTF7AIV2wCiAx1J3AzREAAYASAAEgL_ifD_BwE"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/ugears-logo.png"
+            alt="logo ugears"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a
+          href="https://www.opinel.com/tradition?gclid=EAIaIQobChMI6_KX5fTF7AIV2uFRCh2mQw6rEAAYASAAEgLUcvD_BwE"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/opinel-logo.png"
+            alt="logo opinel"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="http://www.beligne.fr/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/HB-logo.gif"
+            alt="logo hb"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.rubiomonocoat.fr/fr_fr"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/rubio-monocoat-logo.png"
+            alt="logo rubio"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.resoltech.com/fr/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/logo-resoltech.jpg"
+            alt="logo resoltech"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www1.bona.com/fr"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/bona-logo.svg"
+            alt="logo bona"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.blanchon.com/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/blanchon-logo-blanc.png"
+            alt="logo blanchon"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://colles-abrasifs-bois.com/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/Logo_Finitech.png"
+            alt="logo finitech"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.kleiberit.com/fr/page-dacceuil/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/kleiberit_logo.png"
+            alt="logo kleiberit"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.urko.com/fr/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/urko-logo.png"
+            alt="logo urko"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a href="https://www.estwing-france.com/"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/estwing-logo.webp"
+            alt="logo estwing"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/zobo-logo.png"
+          alt="logo zobo"
+        />
+      </div>
+      <div class="petitesDivs">
+        <a
+          href="https://rali.fr/?gclid=EAIaIQobChMIgMyExPXF7AIVyed3Ch00RwlXEAAYASAAEgL9U_D_BwE"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/rali-logo.gif"
+            alt="logo rali"
+        /></a>
+      </div>
+      <div class="petitesDivs">
+        <a
+          href="https://www.arbortechtools.com/wp-content/uploads/2017/10/131017_WW_Catalogue_FRENCH_web.pdf"
+          ><img
+            class="logosPartenaires"
+            src="partenaires/Travail du bois/arb-clev_eng.png"
+            alt="logo arbotech"
+        /></a>
+      </div>
+    </div>
+  </div>
+<!--################################################################## Quatrième "scroll" ##############################################################-->
+<!--################################################################## Quatrième "scroll" ##############################################################-->
+
+
+<div class="scroll">
+    <h2>Outils pour le béton</h2>
+    <div class="fournisseurs">
+      <p>
+        Outils de la marque Team Thaler Utilisation dans les branches
+        d´activités et les matériaux les plus divers. Surtout dans la
+        construction : <br />
+        Forets creux pour béton, béton armé, pierre naturelle et
+        maçonnerie
+      </p>
+      <div class="petitesDivs">
+        <img
+          class="logosPartenaires"
+          src="partenaires/Travail du bois/teamThaler-logo.jpg"
+          alt="teamthaler"
+        />
+      </div>
+    </div>
+  </div>
+<!--##################################################################### Cinquième "srcoll" ##############################################################-->
+<!--##################################################################### Cinquième "srcoll" ##############################################################-->
+  <div class="scroll">
+    <h2>Outils pour espaces verts</h2>
+    <div class="fournisseurs">
+      <p>
+        Chaîne de tronçonneuse, fers broyeurs, tailles haies et
+        tronçonneuses Makita, scies Silky
+      </p>
+      <div class="columnEspacevert">
+        <div class="espaceVertDiv">
+          <a href="https://www.silky-europe.com/"
+            ><img
+              class="logosEspacesVerts"
+              src="partenaires/Travail du bois/Ars-logo.jpg"
+              alt="logo-Ars"
+          /></a>
+        </div>
+        <div class="espaceVertDiv">
+          <a href="https://www.ars-france.fr/"
+            ><img
+              class="logosEspacesVerts"
+              src="partenaires/Travail du bois/Silky-logo.png"
+              alt="logo-silky"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!--################################################################### Cookie --><!-- bannière cookie ###################################################-->
+<!--################################################################### Cookie --><!-- bannière cookie ###################################################-->
+<div class="btncookie" id="boxcookie">
+<p class="p-cookie">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+  expedita blanditiis sed consequatur iure omnis doloremque vitae
+  voluptate id velit, provident ea nemo repellendus officia inventore
+  obcaecati temporibus asperiores voluptas adipisci, aperiam cupiditate,
+  itaque deserunt rerum commodi! Odit accusantium id pariatur officiis
+  alias qui, asperiores aliquid amet voluptatem. Deserunt, debitis.
+</p>
+<button id="nocookie" type="button" class="#">Non</button>
+<button id="okcookie" type="button" class="#">Oui</button>
+</div>
+<!-- ################################################################## footer ###################################################################... -->
+<!-- ################################################################## footer ###################################################################... -->
+<footer>
+  <div class="ligneFooter">
+    <div class="divLogoFooter">
+      <p>Suivez-nous !</p>
+      <a target="_blank" href="https://www.facebook.com/APR35/"
+        ><img src="footer/fb.png" alt="logo facebook"
+      /></a>
+    </div>
+    <div class="contenerFooter">
+      <a href="#nousContacter"
+        ><div class="divDesLogos">
+          <img
+            class="logosFooter"
+            src="footer/telep.png"
+            alt="logo téléphone"
+          /><img
+            class="logosFooter"
+            src="footer/fax.png"
+            alt="logo fax"
+          /><img
+            class="logosFooter"
+            src="footer/home.png"
+            alt="logo adresse"
+          /></div
+      ></a>
+    </div>
+    <div class="contenerMentionsLégales">
+      <button class="pMentions">Mentions légales</button>
+    </div>
+  </div>
+    <div class="mentionsLegalesContener">
+      <h2>Mentions légales</h2>
+      <div class="containerUlFooter">
+      <ul>
+        <li>Édition/publication du site :</li>
+        <li>Affûtage du Pays de Rance</li>
+        <li>10, rue de la Ruette au Loup</li>
+        <li>35400 SAINT MALO</li>
+        <li>Tél. : 02 99 81 04 07</li>
+        <li>Email : apr35@orange.fr</li>
+      </ul>
+
+      <p>
+        Dénomination sociale : EURL AFFUTAGE DU PAYS DE RANCE <br />
+        Capital social : 4000 € <br />
+        N° Siret : 50391412900021 <br>
+        Directeur de la publication : <br />
+        Mme LEVEILLARD
+      </p>
+
+      <ul>
+        Conception site internet :
+        <li>Institut Solacroup</li>
+        <li>Avenue du château Hébert, 35800, Dinard</li>
+        <li>Tél. : 02 99 46 66 03</li>
+      </ul>
+    </div>
+
+      <h3>Respect de la vie privée et des données personnelles :</h3>
+      <p>
+        Les données sont collectées dans le but exclusif d'établir une
+        relation commerciale et professionnelle avec les clients. Les données
+        à caractère personnel sont conservées par Affûtage du Pays de Rance
+        pendant une période raisonnable. Si la personne ne fournit pas toutes
+        les informations obligatoires dans les formulaires du site (*Champs
+        obligatoires), elle ne peut valider le formulaire. Le droit d'accès et
+        de rectification prévu à l'article 34 et suivants de la loi précitée
+        s'exerce par courrier à l'adresse : <br />
+        Affûtage du Pays de Rance <br />
+        10, rue de la Ruette au Loup <br />
+        35400 SAINT MALO
+      </p>
+
+      <h3>Droits de reproduction :</h3>
+      <p>
+        L'ensemble de ce site relève de la législation française et
+        internationale sur le droit d'auteur et la propriété intellectuelle.
+        Tous les droits de reproduction sont réservés, y compris les
+        représentations iconographiques et photographiques. La reproduction de
+        tout ou partie de ce site sur un support quel qu'il soit est
+        formellement interdite, sauf autorisation expresse du directeur de la
+        publication.
+      </p>
+
+      <h3>Crédits photographiques :</h3>
+      <p>
+        Les photographies utilisées dans ce site font l'objet de droits
+        réservés. Elles ne peuvent pas être utilisées ou dupliquées sans
+        l'autorisation écrite de Affûtage du Pays de Rance.
+      </p>
+
+      <h3>Avis relatif à la sécurité :</h3>
+      <p>
+        Afin d'assurer sa sécurité et de garantir son accès à tous, ce site
+        internet emploie des logiciels pour contrôler les flux sur le site,
+        pour identifier les tentatives non autorisées de connexion ou de
+        changement de l'information, ou toute autre initiative pouvant causer
+        d'autres dommages. Les tentatives non autorisées de chargement
+        d'information, d'altération des informations, visant à causer un
+        dommage et d'une manière générale toute atteinte à la disponibilité et
+        l'intégrité de ce site sont strictement interdites et seront
+        sanctionnées par le code pénal. Ainsi l'article 323-1 du code pénal
+        prévoit que le fait d'accéder ou de se maintenir frauduleusement, dans
+        tout ou partie d'un système de traitement automatisé de données (c'est
+        le cas d'un site internet) est puni de deux ans d'emprisonnement et de
+        30 000 euros d'amende. L'article 323-3 du même code prévoit que le
+        fait d'introduire frauduleusement des données dans un système de
+        traitement automatisé ou de supprimer ou de modifier frauduleusement
+        les données qu'il contient est puni de cinq ans d'emprisonnement et de
+        75 000 euros d'amende.
+      </p>
+    </div>
+</footer>
+<!-- ################################################################## SCRIPT ##################################################################... -->
+<!-- ################################################################## SCRIPT ##################################################################... -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="listemenu.js"></script>
+<script src="cookie.js"></script>
+</body>
+</html>
