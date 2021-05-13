@@ -241,31 +241,6 @@ header {
   }
 }
 
-@media (max-width: 480px) and (orientation: portrait) {
- 
-}
-
-/*   
-  @media screen and (max-width: 850px) and (orientation : landscape){
-   
-    
-  
-  
-  }
-  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation : portrait) {
-    
-  
-  }
-  
-  
-  @media screen and (min-device-width : 768px) and (max-device-width : 1025px) and (orientation : portrait) {
-   
-  }
-  @media screen and (min-device-width : 768px) and (max-device-width : 1025px) and (orientation : landscape) {
-  
-  
-  } */
-
 @media screen and (min-width: 1500px) and (max-width: 1800px) and (orientation: landscape) {
   #lame_affutage {
     width: 32%;
