@@ -85,7 +85,7 @@ header {
   background-size: 100%;
 }
 .backgroundVeterinaire {
-  background-image: url(/img/clients/Veterinaire.jpg);
+  background-image: url(../img/clients/Veterinaire.jpg);
 }
 .backgroundCarotteuse {
   background-image: url(img/clients/carotteuse.jpg);
