@@ -198,7 +198,7 @@ header {
 
 /* -----MEDIA QUERIES----- */
 
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 480px) and (orientation: portrait) {
   
   #caddie {
     display: none;
@@ -249,7 +249,7 @@ header {
   }
 }
 
-@media screen and (max-width: 850px) and (orientation: landscape) {
+@media (max-width: 850px) and (orientation: landscape) {
   
   #caddie {
     margin-top: 8rem;
@@ -277,7 +277,7 @@ header {
   }  
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
   #caddie {
     margin-top: 8rem;
   }
@@ -298,7 +298,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
   
   #caddie {
     margin-top: 8rem;
@@ -308,7 +308,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
 
   #caddie {
     margin-top: 8rem;
