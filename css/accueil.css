@@ -205,7 +205,7 @@
   border: 10px double #000;
   width: 100%;
   min-height: 400px;
-  background: url(/img/accueil/moto.jpg) top center;
+  background: url(img/accueil/moto.jpg) top center;
   background-size: 100%;
   margin: 70px 0px 0px 0px;
   background-attachment: fixed;
