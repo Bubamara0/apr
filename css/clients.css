@@ -48,6 +48,10 @@ header {
   width: 50%;
   font-weight: 600;
 }
+
+/*############################################################################ CARTE MERCI ##################################################################################*/
+/*############################################################################ CARTE MERCI ##################################################################################*/
+
 .contenerCartesMerci {
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -81,22 +85,22 @@ header {
   background-size: 100%;
 }
 .backgroundVeterinaire {
-  background-image: url(/img/clients/Veterinaire.jpg);
+  background-image: url(img/clients/Veterinaire.jpg);
 }
 .backgroundCarotteuse {
-  background-image: url(/img/clients/carotteuse.jpg);
+  background-image: url(img/clients/carotteuse.jpg);
 }
 .backgroundPVC {
-  background-image: url(/img/clients/fenetre.jpg);
+  background-image: url(img/clients/fenetre.jpg);
 }
 .backgroundAlimentaire {
-  background-image: url(/img/clients/restaut.jpg);
+  background-image: url(img/clients/restaut.jpg);
 }
 .backgroundCiseaux {
-  background-image: url(/img/clients/ciseauxBois.jpg);
+  background-image: url(img/clients/ciseauxBois.jpg);
 }
 .backgroundSecateur {
-  background-image: url(/img/clients/secateur.jpg);
+  background-image: url(img/clients/secateur.jpg);
 }
 .cartesMerci a {
   color: black;
