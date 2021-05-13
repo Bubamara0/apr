@@ -78,7 +78,7 @@ header {
 #header_boutique {
   width: 90vw;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/img/vente/trois.jpg");
+    url("../img/vente/trois.jpg");
   background-size: cover;
   background-position: center;
   height: 20rem;
